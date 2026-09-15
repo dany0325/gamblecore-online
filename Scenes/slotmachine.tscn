@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://bvrxhvj2s4ya6"]
+
+[ext_resource type="Script" uid="uid://fytafa3cv6eb" path="res://Scripts/arm.gd" id="1_fad38"]
+[ext_resource type="Texture2D" uid="uid://dwrsjx011f1yc" path="res://Assets/wasser.jpg" id="2_0k3v5"]
+[ext_resource type="Script" uid="uid://cilcr6i0vjw2b" path="res://Scenes/animated_sprite_2d.gd" id="3_34cmk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bhunq"]
+size = Vector2(12, 54)
+
+[node name="Slotmachine" type="Node2D" unique_id=1201141508]
+
+[node name="Arm" type="Area2D" parent="." unique_id=2043822558]
+script = ExtResource("1_fad38")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Arm" unique_id=1244028591]
+position = Vector2(20.000002, -2.000001)
+rotation = 0.3253765
+scale = Vector2(0.6918042, 0.8185523)
+shape = SubResource("RectangleShape2D_bhunq")
+
+[node name="Sprite2D" type="Sprite2D" parent="Arm/CollisionShape2D" unique_id=1664507609]
+scale = Vector2(0.028436014, 0.124423936)
+texture = ExtResource("2_0k3v5")
+
+[node name="Slot" type="AnimatedSprite2D" parent="." unique_id=563896733]
+script = ExtResource("3_34cmk")
+
+[connection signal="arm_pulled" from="Arm" to="Arm" method="_on_arm_pulled"]
+[connection signal="arm_pulled" from="Arm" to="Slot" method="_on_arm_pulled"]
+[connection signal="mouse_entered" from="Arm" to="Arm" method="_on_mouse_entered"]
