@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://fytafa3cv6eb" path="res://Scripts/arm.gd" id="1_fad38"]
 [ext_resource type="Texture2D" uid="uid://dwrsjx011f1yc" path="res://Assets/wasser.jpg" id="2_0k3v5"]
-[ext_resource type="Script" uid="uid://cilcr6i0vjw2b" path="res://Scenes/animated_sprite_2d.gd" id="3_34cmk"]
+[ext_resource type="Script" uid="uid://cilcr6i0vjw2b" path="res://Scripts/slot.gd" id="3_34cmk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bhunq"]
 size = Vector2(12, 54)
@@ -11,6 +11,7 @@ size = Vector2(12, 54)
 
 [node name="Arm" type="Area2D" parent="." unique_id=2043822558]
 script = ExtResource("1_fad38")
+slots = Array[NodePath]([NodePath("../Slot1"), NodePath("../Slot2"), NodePath("../Slot3")])
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Arm" unique_id=1244028591]
 position = Vector2(20.000002, -2.000001)
@@ -22,9 +23,17 @@ shape = SubResource("RectangleShape2D_bhunq")
 scale = Vector2(0.028436014, 0.124423936)
 texture = ExtResource("2_0k3v5")
 
-[node name="Slot" type="AnimatedSprite2D" parent="." unique_id=563896733]
+[node name="Slot1" type="AnimatedSprite2D" parent="." unique_id=563896733]
+script = ExtResource("3_34cmk")
+
+[node name="Slot2" type="AnimatedSprite2D" parent="." unique_id=240168420]
+script = ExtResource("3_34cmk")
+
+[node name="Slot3" type="AnimatedSprite2D" parent="." unique_id=1451337396]
 script = ExtResource("3_34cmk")
 
 [connection signal="arm_pulled" from="Arm" to="Arm" method="_on_arm_pulled"]
-[connection signal="arm_pulled" from="Arm" to="Slot" method="_on_arm_pulled"]
+[connection signal="arm_pulled" from="Arm" to="Slot1" method="_on_arm_pulled"]
+[connection signal="arm_pulled" from="Arm" to="Slot2" method="_on_arm_pulled"]
+[connection signal="arm_pulled" from="Arm" to="Slot3" method="_on_arm_pulled"]
 [connection signal="mouse_entered" from="Arm" to="Arm" method="_on_mouse_entered"]
