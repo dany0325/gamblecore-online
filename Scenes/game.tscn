@@ -17,5 +17,19 @@ offset_bottom = 23.0
 text = "Money: 10"
 metadata/_edit_use_anchors_ = true
 
+[node name="loan_gib" type="Button" parent="." unique_id=599783839]
+offset_left = 304.41312
+offset_top = -2.0
+offset_right = 497.41312
+offset_bottom = 29.0
+text = "Loan cause youre broke"
+
+[node name="debt_kabel" type="Label" parent="." unique_id=1070934247]
+offset_left = 320.5897
+offset_top = 42.0
+offset_right = 458.5897
+offset_bottom = 65.0
+text = "Debt: -10 gazillion"
+
 [node name="slotmachine" parent="." unique_id=1201141508 instance=ExtResource("1_ebmjs")]
 position = Vector2(250.00113, 187)

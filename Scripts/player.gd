@@ -1,8 +1,21 @@
 extends Node
 
 var money = 10;
+var debt = 0
 @onready var money_label: Label = $"../money_label"
+@onready var debt_kabel: Label = $"../debt_kabel"
+@onready var loan_gib: Button = $"../loan_gib"
+
+func _ready() -> void:
+	loan_gib.pressed.connect(_loan_gib)
+
+func _process(delta: float) -> void:
+	money_label.text = "Money: " + str(money)
+	debt_kabel.text = "Debt: " + str(debt)
 
 func add_money(money_gained):
 	money += money_gained
-	money_label.text = "Money: " + str(money)
+
+func _loan_gib():
+	money += 100
+	debt -= 100
