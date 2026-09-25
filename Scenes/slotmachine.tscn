@@ -14,9 +14,8 @@ script = ExtResource("1_fad38")
 slots = Array[NodePath]([NodePath("../Slot1"), NodePath("../Slot2"), NodePath("../Slot3")])
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Arm" unique_id=1244028591]
-position = Vector2(20.000002, -2.000001)
-rotation = 0.3253765
-scale = Vector2(0.6918042, 0.8185523)
+position = Vector2(3.8146973e-06, -2.3841858e-07)
+scale = Vector2(24.224041, 1.8428035)
 shape = SubResource("RectangleShape2D_bhunq")
 
 [node name="Sprite2D" type="Sprite2D" parent="Arm/CollisionShape2D" unique_id=1664507609]
@@ -27,6 +26,7 @@ texture = ExtResource("2_0k3v5")
 script = ExtResource("3_34cmk")
 
 [node name="Slot2" type="AnimatedSprite2D" parent="." unique_id=240168420]
+frame_progress = 0.38256487
 script = ExtResource("3_34cmk")
 
 [node name="Slot3" type="AnimatedSprite2D" parent="." unique_id=1451337396]
