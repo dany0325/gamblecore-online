@@ -1,0 +1,16 @@
+78098b89c88a74ebe8c20117b8754620
+::res://::1790321575
+Final slot machine concept.png::CompressedTexture2D::8112397363435567223::1790321469::1790321575::1::::<><><>0<>0<>56e946c7a71207da6565ba4674e35291<>res://.godot/imported/Final slot machine concept.png-512f35d1fdd2a4d16ac726c9d8369029.ctex::
+Gamblecore ui otlet.png::CompressedTexture2D::7575912320693531857::1790321469::1790321575::1::::<><><>0<>0<>8ca18fcda9d1db7f31b30e392239f516<>res://.godot/imported/Gamblecore ui otlet.png-d72b67d0218d5e72c961859bfb9814a0.ctex::
+link to slot machine assets.txt::TextFile::-1::1790321469::0::1::::<><><>0<>0<><>::
+TrelloLink.txt::TextFile::-1::1790321469::0::1::::<><><>0<>0<><>::
+::res://Assets/::1790321469
+HGAlPxiW4AAF77I.jpg::CompressedTexture2D::454758043091414907::1790321469::1790321575::1::::<><><>0<>0<>bf7aef3d39e7a24853faac1e398a4c7a<>res://.godot/imported/HGAlPxiW4AAF77I.jpg-336d8fd8a6e902454c69ded1b76d22f9.ctex::
+icon.svg::CompressedTexture2D::4895030881431030067::1790321469::1790321575::1::::<><><>0<>0<>d092222890ec556a95de02e43ea6be63<>res://.godot/imported/icon.svg-8193eb3d66a1b5143b8bb4c28c1dc139.ctex::
+wasser.jpg::CompressedTexture2D::8739621258823429090::1790321469::1790321575::1::::<><><>0<>0<>244b5ad5e46daa05da2c29bab05774b6<>res://.godot/imported/wasser.jpg-57acd336b3137f4aa9cdedc17188e4ef.ctex::
+::res://Scenes/::1790321469
+game.tscn::PackedScene::2973982191237849876::1790321469::0::1::::<><><>0<>0<><>::uid://bvrxhvj2s4ya6::::res://Scenes/slotmachine.tscn
+slotmachine.tscn::PackedScene::3896890931447331111::1790321469::0::1::::<><><>0<>0<><>::uid://fytafa3cv6eb::::res://Scripts/arm.gd<>uid://dwrsjx011f1yc::::res://Assets/wasser.jpg<>uid://cilcr6i0vjw2b::::res://Scripts/slot.gd
+::res://Scripts/::1790321469
+arm.gd::GDScript::401643171042635981::1790321469::0::1::::<>Area2D<><>0<>0<><>::
+slot.gd::GDScript::5357213706013653415::1790321469::0::1::::<>AnimatedSprite2D<><>0<>0<><>::
