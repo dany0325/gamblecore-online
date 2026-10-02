@@ -1,17 +1,17 @@
-[gd_scene format=3 uid="uid://bvrxhvj2s4ya6"]
+[gd_scene format=3 uid="uid://cn2nplratuhsk"]
 
-[ext_resource type="Script" uid="uid://fytafa3cv6eb" path="res://Scripts/arm.gd" id="1_fad38"]
-[ext_resource type="Texture2D" uid="uid://dwrsjx011f1yc" path="res://Assets/wasser.jpg" id="2_0k3v5"]
-[ext_resource type="Script" uid="uid://cilcr6i0vjw2b" path="res://Scripts/slot.gd" id="3_34cmk"]
+[ext_resource type="Script" uid="uid://fytafa3cv6eb" path="res://Scripts/arm.gd" id="1_eukpv"]
+[ext_resource type="Texture2D" uid="uid://gqj2fdmxut4f" path="res://Assets/HGAlPxiW4AAF77I.jpg" id="2_eukpv"]
+[ext_resource type="Script" uid="uid://cilcr6i0vjw2b" path="res://Scripts/slot.gd" id="3_df1we"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bhunq"]
 size = Vector2(12, 54)
 
-[node name="Slotmachine" type="Node2D" unique_id=1201141508]
+[node name="SecondTierSlotmachine" type="Node2D" unique_id=1201141508]
 
 [node name="Arm" type="Area2D" parent="." unique_id=2043822558]
-script = ExtResource("1_fad38")
-slots = Array[NodePath]([NodePath("../Slot1"), NodePath("../Slot2"), NodePath("../Slot3")])
+script = ExtResource("1_eukpv")
+slots = Array[NodePath]([NodePath("../Slot1"), NodePath("../Slot2"), NodePath("../Slot3"), NodePath("../Slot4"), NodePath("../Slot5")])
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Arm" unique_id=1244028591]
 position = Vector2(3.8146973e-06, -2.3841858e-07)
@@ -19,18 +19,24 @@ scale = Vector2(24.224041, 1.8428035)
 shape = SubResource("RectangleShape2D_bhunq")
 
 [node name="Sprite2D" type="Sprite2D" parent="Arm/CollisionShape2D" unique_id=1664507609]
-scale = Vector2(0.028436014, 0.124423936)
-texture = ExtResource("2_0k3v5")
+scale = Vector2(-0.011332649, 0.055693977)
+texture = ExtResource("2_eukpv")
 
 [node name="Slot1" type="AnimatedSprite2D" parent="." unique_id=563896733]
-script = ExtResource("3_34cmk")
+script = ExtResource("3_df1we")
 
 [node name="Slot2" type="AnimatedSprite2D" parent="." unique_id=240168420]
 frame_progress = 0.38256487
-script = ExtResource("3_34cmk")
+script = ExtResource("3_df1we")
 
 [node name="Slot3" type="AnimatedSprite2D" parent="." unique_id=1451337396]
-script = ExtResource("3_34cmk")
+script = ExtResource("3_df1we")
+
+[node name="Slot4" type="AnimatedSprite2D" parent="." unique_id=972060815]
+script = ExtResource("3_df1we")
+
+[node name="Slot5" type="AnimatedSprite2D" parent="." unique_id=632317756]
+script = ExtResource("3_df1we")
 
 [node name="BetChange" type="Button" parent="." unique_id=2070456783]
 offset_left = 45.0
@@ -44,12 +50,13 @@ offset_left = -52.0
 offset_top = -85.0
 offset_right = 34.5
 offset_bottom = -54.0
-min_value = 1.0
-max_value = 10.0
-value = 1.0
+min_value = 10.0
+value = 10.0
 
 [connection signal="arm_pulled" from="Arm" to="Arm" method="_on_arm_pulled"]
 [connection signal="arm_pulled" from="Arm" to="Slot1" method="_on_arm_pulled"]
 [connection signal="arm_pulled" from="Arm" to="Slot2" method="_on_arm_pulled"]
 [connection signal="arm_pulled" from="Arm" to="Slot3" method="_on_arm_pulled"]
+[connection signal="arm_pulled" from="Arm" to="Slot4" method="_on_arm_pulled"]
+[connection signal="arm_pulled" from="Arm" to="Slot5" method="_on_arm_pulled"]
 [connection signal="mouse_entered" from="Arm" to="Arm" method="_on_mouse_entered"]

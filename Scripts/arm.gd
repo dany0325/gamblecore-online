@@ -8,15 +8,23 @@ signal arm_pulled
 @export var slots: Array[NodePath] = []
 var results: Array = []
 var item_multipliers = {"cherry":10, "coin":7, "clover": 5, "lightning":3, "diamond":2, "six":1, "seven":1}
-var operation_cost = 5
-var payouts = {3: operation_cost * 3, 2: operation_cost * 2}
+var operation_cost
+var payouts: Dictionary:
+	get:
+		return {
+			5: operation_cost * 4,
+			4: operation_cost * 3,
+			3: operation_cost * 2,
+			2: operation_cost
+		}
 #var items = ["cherry", "coin", "clover", "lightning", "diamond", "six", "seven"]
 
 func _ready() -> void:
 	bet_change.pressed.connect(_change_bet)
+	operation_cost = spin_box.value
 
 func _change_bet():
-	operation_cost = spin_box.value * -1
+	operation_cost = spin_box.value
 
 func _on_mouse_entered() -> void:
 	if player.money <= 0:
