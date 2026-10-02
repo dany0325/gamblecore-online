@@ -7,18 +7,16 @@ signal arm_pulled
 @onready var player: Node = $"../../player"
 @export var slots: Array[NodePath] = []
 var results: Array = []
-var item_multipliers = {"cherry":1, "coin":1, "clover": 2, "lightning":3, "diamond":5, "six":7, "seven":10}
+var item_multipliers = {"cherry":1, "coin":1.5, "clover": 2, "lightning":3, "diamond":5, "six":7, "seven":10}
 var operation_cost
-var payouts: Dictionary:
-	get:
-		return {
-			7: operation_cost * 250,
-			6: operation_cost * 100,
-			5: operation_cost * 40,
-			4: operation_cost * 15,
-			3: operation_cost * 5,
-			2: operation_cost * 0.5
-		}
+var streak_payout_ratios = {
+	2: 1.0, 
+	3: 3.0,
+	4: 10.0,
+	5: 35.0,
+	6: 100.0,
+	7: 300.0
+}
 #var items = ["cherry", "coin", "clover", "lightning", "diamond", "six", "seven"]
 #var weights = PackedFloat32Array([1,1,2,3,4,5,5])
 
@@ -42,33 +40,27 @@ func _on_mouse_entered() -> void:
 		_check_result(results)
 
 func _check_result(items: Array) -> void:
-	var counts := {}
-	for item in items:
-		counts[item] = counts.get(item, 0) + 1
-
-	var max_count := 0
-	var winning_item = null
-	for item in counts:
-		if counts[item] > max_count:
-			max_count = counts[item]
-			winning_item = item
-
+	
+	var first_item = items[0]
 	var match_streak := 1
-
- 	for i in range(1, items.size()):
+	for i in range(1, items.size()):
 		if items[i] == first_item:
 			match_streak += 1
 		else:
-			break # Chain broke! Stop counting.
+			break
 
-	if max_count == items.size():
-		print("JACKPOT: all %d match! %s" % [items.size(), winning_item])
-		player.add_money(int(payouts.get(max_count) * item_multipliers.get(winning_item)))
-	elif max_count >= 2:
-		print("%d matched: %s" % [max_count, winning_item])
-		player.add_money(int(payouts.get(max_count) * item_multipliers.get(winning_item)))
+	if match_streak >= 2 and first_item in item_multipliers:
+		var base_ratio: float = streak_payout_ratios.get(match_streak, 1.0)
+		var item_tier: float = item_multipliers.get(first_item, 1.0)
+			
+			# Calculate total payout smoothly
+		var total_payout := int(operation_cost * base_ratio * item_tier)
 
+		if match_streak == items.size():
+			print("JACKPOT! %d %ss! Payout: %d" % [match_streak, first_item, total_payout])
+		else:
+			print("%d %ss matched! Payout: %d" % [match_streak, first_item, total_payout])
+
+			player.add_money(total_payout)
 	else:
 		print("No match")
-		
-		
