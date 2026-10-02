@@ -2,20 +2,27 @@ extends Area2D
 
 signal arm_pulled
 
+@onready var spin_box: SpinBox = $"../SpinBox"
+@onready var bet_change: Button = $"../BetChange"
 @onready var player: Node = $"../../player"
 @export var slots: Array[NodePath] = []
 var results: Array = []
-var payouts = {3: 20, 2: 5}
 var item_multipliers = {"cherry":10, "coin":7, "clover": 5, "lightning":3, "diamond":2, "six":1, "seven":1}
-var operation_cost = -5
+var operation_cost = 5
+var payouts = {3: operation_cost * 3, 2: operation_cost * 2}
 #var items = ["cherry", "coin", "clover", "lightning", "diamond", "six", "seven"]
 
+func _ready() -> void:
+	bet_change.pressed.connect(_change_bet)
+
+func _change_bet():
+	operation_cost = spin_box.value * -1
 
 func _on_mouse_entered() -> void:
 	if player.money <= 0:
 		print("lmao youre broke")
 	else:
-		player.add_money(operation_cost)
+		player.add_money(operation_cost*-1)
 		arm_pulled.emit()
 		results.clear()
 		for slot_path in slots:

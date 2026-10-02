@@ -32,6 +32,22 @@ script = ExtResource("3_34cmk")
 [node name="Slot3" type="AnimatedSprite2D" parent="." unique_id=1451337396]
 script = ExtResource("3_34cmk")
 
+[node name="BetChange" type="Button" parent="." unique_id=2070456783]
+offset_left = 45.0
+offset_top = -85.0
+offset_right = 141.0
+offset_bottom = -54.0
+text = "Change bet"
+
+[node name="SpinBox" type="SpinBox" parent="." unique_id=237794553]
+offset_left = -52.0
+offset_top = -85.0
+offset_right = 34.5
+offset_bottom = -54.0
+min_value = 1.0
+max_value = 10.0
+value = 1.0
+
 [connection signal="arm_pulled" from="Arm" to="Arm" method="_on_arm_pulled"]
 [connection signal="arm_pulled" from="Arm" to="Slot1" method="_on_arm_pulled"]
 [connection signal="arm_pulled" from="Arm" to="Slot2" method="_on_arm_pulled"]
