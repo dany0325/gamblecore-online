@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://bvrxhvj2s4ya6" path="res://Scenes/first_tier_slotmachine.tscn" id="1_ebmjs"]
 [ext_resource type="Script" uid="uid://c81kcsmhgtk1o" path="res://Scripts/player.gd" id="2_qxrlw"]
 [ext_resource type="PackedScene" uid="uid://cn2nplratuhsk" path="res://Scenes/second_tier_slotmachine.tscn" id="3_wrm1d"]
+[ext_resource type="PackedScene" uid="uid://drt4uitqtw7k" path="res://Scenes/third_tier_slotmachine.tscn" id="4_3dryh"]
 
 [node name="Game" type="Node2D" unique_id=123828378]
 position = Vector2(342, 180)
@@ -33,10 +34,10 @@ offset_bottom = 65.0
 text = "Debt: -10 gazillion"
 
 [node name="FirstTierSlotmachine" parent="." unique_id=1201141508 instance=ExtResource("1_ebmjs")]
-position = Vector2(-38.235443, 196)
+position = Vector2(-175.00078, 206)
 
 [node name="SecondTierSlotmachine" parent="." unique_id=1101113360 instance=ExtResource("3_wrm1d")]
-position = Vector2(367.64868, 214)
+position = Vector2(186.76552, 201)
 
 [node name="aaaaaaaaaaaaaaaaa" type="Button" parent="." unique_id=1078949645]
 offset_left = 342.64856
@@ -44,3 +45,6 @@ offset_top = 80.0
 offset_right = 442.64856
 offset_bottom = 111.0
 text = "Loan payoff"
+
+[node name="SecondTierSlotmachine2" parent="." unique_id=379359700 instance=ExtResource("4_3dryh")]
+position = Vector2(566.17896, 201)
