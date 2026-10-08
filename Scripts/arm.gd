@@ -29,7 +29,7 @@ func _change_bet():
 
 func _on_mouse_entered() -> void:
 	if player.money < operation_cost:
-		print("lmao youre broke")
+		print("You're broke, get a loan or something")
 	else:
 		player.add_money(operation_cost*-1)
 		arm_pulled.emit()

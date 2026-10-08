@@ -33,4 +33,4 @@ func _loan_payoff():
 			money -= temp
 			debt += temp
 	else:
-		print("kys jew. ingame")
+		print("You don't have enough money")
