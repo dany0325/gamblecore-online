@@ -10,12 +10,12 @@ var results: Array = []
 var item_multipliers = {"cherry":1, "coin":1.5, "clover": 2, "lightning":3, "diamond":5, "six":7, "seven":10}
 var operation_cost
 var streak_payout_ratios = {
-	2: 1.0, 
-	3: 3.0,
-	4: 10.0,
-	5: 35.0,
-	6: 100.0,
-	7: 300.0
+	2: 2.0, 
+	3: 6.0,
+	4: 20.0,
+	5: 70.0,
+	6: 200.0,
+	7: 600.0
 }
 #var items = ["cherry", "coin", "clover", "lightning", "diamond", "six", "seven"]
 #var weights = PackedFloat32Array([1,1,2,3,4,5,5])

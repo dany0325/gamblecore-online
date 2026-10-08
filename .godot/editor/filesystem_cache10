@@ -1,12 +1,12 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1791476688
+::res://::1791478052
 Final slot machine concept.png::CompressedTexture2D::8112397363435567223::1791476366::1791476688::1::::<><><>0<>0<>56e946c7a71207da6565ba4674e35291<>res://.godot/imported/Final slot machine concept.png-512f35d1fdd2a4d16ac726c9d8369029.ctex::
 Gamblecore ui otlet.png::CompressedTexture2D::7575912320693531857::1791476366::1791476688::1::::<><><>0<>0<>8ca18fcda9d1db7f31b30e392239f516<>res://.godot/imported/Gamblecore ui otlet.png-d72b67d0218d5e72c961859bfb9814a0.ctex::
 link to assets.txt::TextFile::-1::1791476622::0::1::::<><><>0<>0<><>::
 link to slot machine assets.txt::TextFile::-1::1791476366::0::1::::<><><>0<>0<><>::
 LinkToTheDocumantation.txt::TextFile::-1::1791476622::0::1::::<><><>0<>0<><>::
 TrelloLink.txt::TextFile::-1::1791476622::0::1::::<><><>0<>0<><>::
-::res://Assets/::1791476622
+::res://Assets/::1791476688
 6 art asset.png::CompressedTexture2D::8059515119695168268::1791476622::1791476688::1::::<><><>0<>0<>aefeb68191194ffd6692f6999533fb61<>res://.godot/imported/6 art asset.png-2ccf6ec562d23cdd1132900ed3a25a09.ctex::
 7 art asset.png::CompressedTexture2D::610050858162320179::1791476622::1791476688::1::::<><><>0<>0<>c1d1d1279262a47ee9ba26aad3fa1259<>res://.godot/imported/7 art asset.png-0d9a4e00071a8f2ee0272a9237711253.ctex::
 7 art insipration.jpg::CompressedTexture2D::5693296333594947569::1791476622::1791476688::1::::<><><>0<>0<>6b97004bbda81b6236e8fb719e375301<>res://.godot/imported/7 art insipration.jpg-746aeb257e7e5daf8376e2373e7a90bb.ctex::
@@ -21,7 +21,7 @@ spinning coin.png::CompressedTexture2D::6023171695787840828::1791476622::1791476
 wasser.jpg::CompressedTexture2D::8739621258823429090::1791476622::1791476622::1::::<><><>0<>0<>244b5ad5e46daa05da2c29bab05774b6<>res://.godot/imported/wasser.jpg-57acd336b3137f4aa9cdedc17188e4ef.ctex::
 ::res://Pixel Fantasy Slot Machine/::1791476622
 EULA - READ ME.txt::TextFile::-1::1791476622::0::1::::<><><>0<>0<><>::
-::res://Pixel Fantasy Slot Machine/Slot Machine/::1791476622
+::res://Pixel Fantasy Slot Machine/Slot Machine/::1791476688
 slot-machine1.png::CompressedTexture2D::4998505844029260747::1791476622::1791476688::1::::<><><>0<>0<>07a75181561e2052415cdbd0de06e8ba<>res://.godot/imported/slot-machine1.png-52ec4e5c4b06dc22149c4c74f68c564a.ctex::
 slot-machine2.png::CompressedTexture2D::7024022449030677912::1791476622::1791476688::1::::<><><>0<>0<>36decade5ca069fbd7530a70331c8f21<>res://.godot/imported/slot-machine2.png-eede913b8b909552926faa2e0bf76456.ctex::
 slot-machine3.png::CompressedTexture2D::1463880959954829835::1791476622::1791476688::1::::<><><>0<>0<>fff82c87914b9ec6b3bad470466defb9<>res://.godot/imported/slot-machine3.png-3b88e64ed71464cd16bfe2edf1e46cee.ctex::
@@ -31,12 +31,12 @@ slot-symbol1.png::CompressedTexture2D::740253220572568723::1791476622::179147668
 slot-symbol2.png::CompressedTexture2D::191046776119453300::1791476622::1791476688::1::::<><><>0<>0<>92b414e8edc3de52dd04fab0e635a12d<>res://.godot/imported/slot-symbol2.png-1d365eb97b0f5c98b3b24cb74bd35d8f.ctex::
 slot-symbol3.png::CompressedTexture2D::6116394947395890542::1791476622::1791476688::1::::<><><>0<>0<>afd9521c5fb60bf8105bedcdc77d680b<>res://.godot/imported/slot-symbol3.png-0d21049e370848b55cc7bd67791a3362.ctex::
 slot-symbol4.png::CompressedTexture2D::2841481184404950093::1791476622::1791476688::1::::<><><>0<>0<>aa79de61251392f5407ba241e765cd9e<>res://.godot/imported/slot-symbol4.png-73862f82898769f2771e0d72a852c9e8.ctex::
-::res://Scenes/::1791476622
+::res://Scenes/::1791476771
 first_tier_slotmachine.tscn::PackedScene::3896890931447331111::1791476622::0::1::::<><><>0<>0<><>::uid://fytafa3cv6eb::::res://Scripts/arm.gd<>uid://dwrsjx011f1yc::::res://Assets/wasser.jpg<>uid://cilcr6i0vjw2b::::res://Scripts/slot.gd
-game.tscn::PackedScene::2973982191237849876::1791476622::0::1::::<><><>0<>0<><>::uid://bvrxhvj2s4ya6::::res://Scenes/first_tier_slotmachine.tscn<>uid://c81kcsmhgtk1o::::res://Scripts/player.gd<>uid://cn2nplratuhsk::::res://Scenes/second_tier_slotmachine.tscn<>uid://drt4uitqtw7k::::res://Scenes/third_tier_slotmachine.tscn
+game.tscn::PackedScene::2973982191237849876::1791476771::0::1::::<><><>0<>0<><>::uid://bvrxhvj2s4ya6::::res://Scenes/first_tier_slotmachine.tscn<>uid://c81kcsmhgtk1o::::res://Scripts/player.gd<>uid://cn2nplratuhsk::::res://Scenes/second_tier_slotmachine.tscn<>uid://drt4uitqtw7k::::res://Scenes/third_tier_slotmachine.tscn
 second_tier_slotmachine.tscn::PackedScene::5741851245899486362::1791476622::0::1::::<><><>0<>0<><>::uid://fytafa3cv6eb::::res://Scripts/arm.gd<>uid://gqj2fdmxut4f::::res://Assets/HGAlPxiW4AAF77I.jpg<>uid://cilcr6i0vjw2b::::res://Scripts/slot.gd
 third_tier_slotmachine.tscn::PackedScene::246867427329784090::1791476622::0::1::::<><><>0<>0<><>::uid://fytafa3cv6eb::::res://Scripts/arm.gd<>uid://cnn7nnnwre0j6::::res://Assets/2801.jpg<>uid://cilcr6i0vjw2b::::res://Scripts/slot.gd
-::res://Scripts/::1791476630
-arm.gd::GDScript::401643171042635981::1791476630::0::1::::<>Area2D<><>0<>0<><>::
-player.gd::GDScript::7143358734847080194::1791476622::0::1::::<>Node<><>0<>0<><>::
+::res://Scripts/::1791476771
+arm.gd::GDScript::401643171042635981::1791476737::0::1::::<>Area2D<><>0<>0<><>::
+player.gd::GDScript::7143358734847080194::1791476771::0::1::::<>Node<><>0<>0<><>::
 slot.gd::GDScript::5357213706013653415::1791476630::0::1::::<>AnimatedSprite2D<><>0<>0<><>::
