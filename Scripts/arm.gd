@@ -55,12 +55,11 @@ func _check_result(items: Array) -> void:
 			
 			# Calculate total payout smoothly
 		var total_payout := int(operation_cost * base_ratio * item_tier)
-
+		
 		if match_streak == items.size():
 			print("JACKPOT! %d %ss! Payout: %d" % [match_streak, first_item, total_payout])
 		else:
 			print("%d %ss matched! Payout: %d" % [match_streak, first_item, total_payout])
-
-			player.add_money(total_payout)
+		player.add_money(total_payout)
 	else:
 		print("No match")
