@@ -12,7 +12,7 @@ func _ready() -> void:
 	aaaaaaaaaaaaaaaaa.pressed.connect(_loan_payoff)
 	
 
-func _process(_delta: float) -> void:
+func _process(delta: float) -> void:
 	money_label.text = "Money: " + str(money)
 	debt_kabel.text = "Debt: " + str(debt)
 
@@ -33,4 +33,4 @@ func _loan_payoff():
 			money -= temp
 			debt += temp
 	else:
-		print("You don't have enough money to pay your loan, broke boy.") #print("kys jew. ingame")
+		print("You don't have enough money")
