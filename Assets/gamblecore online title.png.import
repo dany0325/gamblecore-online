@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://u4d512eyjkkh"
-path="res://.godot/imported/slot-machine3.png-3b88e64ed71464cd16bfe2edf1e46cee.ctex"
+uid="uid://bmenbsjc5ebv7"
+path="res://.godot/imported/gamblecore online title.png-820eb1c64e8c8f900940a33e1b873b23.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Pixel Fantasy Slot Machine/Slot Machine/slot-machine3.png"
-dest_files=["res://.godot/imported/slot-machine3.png-3b88e64ed71464cd16bfe2edf1e46cee.ctex"]
+source_file="res://Assets/gamblecore online title.png"
+dest_files=["res://.godot/imported/gamblecore online title.png-820eb1c64e8c8f900940a33e1b873b23.ctex"]
 
 [params]
 

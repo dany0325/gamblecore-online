@@ -1,11 +1,72 @@
 [gd_scene format=3 uid="uid://cn2nplratuhsk"]
 
 [ext_resource type="Script" uid="uid://fytafa3cv6eb" path="res://Scripts/arm.gd" id="1_eukpv"]
-[ext_resource type="Texture2D" uid="uid://gqj2fdmxut4f" path="res://Assets/HGAlPxiW4AAF77I.jpg" id="2_eukpv"]
+[ext_resource type="Texture2D" uid="uid://4e0u2ysi87t5" path="res://Assets/literal slot machine assets/craft mine slot machine.png" id="2_eukpv"]
 [ext_resource type="Script" uid="uid://cilcr6i0vjw2b" path="res://Scripts/slot.gd" id="3_df1we"]
+[ext_resource type="Texture2D" uid="uid://b2676817o4xd" path="res://Assets/Pixel Fantasy Slot Machine/Slot Machine/slot-machine5.png" id="3_hg8ip"]
+[ext_resource type="Texture2D" uid="uid://dm3dbihbu0s0k" path="res://Assets/slot machine assets/6 art asset.png" id="4_yjp4p"]
+[ext_resource type="Texture2D" uid="uid://ixrpiqatar68" path="res://Assets/slot machine assets/7 art asset.png" id="6_507b0"]
+[ext_resource type="Texture2D" uid="uid://50cul8uuey3j" path="res://Assets/slot machine assets/cherry.png" id="7_h8a1i"]
+[ext_resource type="Texture2D" uid="uid://crvticlxakqp4" path="res://Assets/slot machine assets/diamond.png" id="8_h2pca"]
+[ext_resource type="Texture2D" uid="uid://ca8go76208j1w" path="res://Assets/slot machine assets/lightning.png" id="9_pbwx1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bhunq"]
-size = Vector2(12, 54)
+size = Vector2(12, 220.1839)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_83mgo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_yjp4p")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fcujq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_507b0")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tu0h3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_h8a1i")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g4v7s"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_h2pca")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yf5fn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_pbwx1")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="SecondTierSlotmachine" type="Node2D" unique_id=1201141508]
 
@@ -14,49 +75,78 @@ script = ExtResource("1_eukpv")
 slots = Array[NodePath]([NodePath("../Slot1"), NodePath("../Slot2"), NodePath("../Slot3"), NodePath("../Slot4"), NodePath("../Slot5")])
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Arm" unique_id=1244028591]
-position = Vector2(3.8146973e-06, -2.3841858e-07)
+position = Vector2(3.8146973e-06, -153.12213)
 scale = Vector2(24.224041, 1.8428035)
 shape = SubResource("RectangleShape2D_bhunq")
 
 [node name="Sprite2D" type="Sprite2D" parent="Arm/CollisionShape2D" unique_id=1664507609]
-scale = Vector2(-0.011332649, 0.055693977)
+position = Vector2(-2.0640655, -13.500011)
+scale = Vector2(-0.04805783, 0.5253715)
 texture = ExtResource("2_eukpv")
+flip_h = true
 
-[node name="Slot1" type="AnimatedSprite2D" parent="." unique_id=563896733]
+[node name="SlotMachine5" type="Sprite2D" parent="Arm/CollisionShape2D" unique_id=608483230]
+position = Vector2(-4.7060685, -25.43834)
+scale = Vector2(0.0121726915, 0.1600126)
+texture = ExtResource("3_hg8ip")
+
+[node name="SlotMachine6" type="Sprite2D" parent="Arm/CollisionShape2D" unique_id=1603979425]
+position = Vector2(-1.4861271, -24.895699)
+scale = Vector2(0.0124703925, 0.16392593)
+texture = ExtResource("3_hg8ip")
+
+[node name="Slot1" type="AnimatedSprite2D" parent="." unique_id=274849855]
+position = Vector2(2, -189)
+sprite_frames = SubResource("SpriteFrames_83mgo")
 script = ExtResource("3_df1we")
 
-[node name="Slot2" type="AnimatedSprite2D" parent="." unique_id=240168420]
-frame_progress = 0.38256487
+[node name="Slot2" type="AnimatedSprite2D" parent="." unique_id=281539338]
+position = Vector2(-76, -185)
+sprite_frames = SubResource("SpriteFrames_fcujq")
 script = ExtResource("3_df1we")
 
-[node name="Slot3" type="AnimatedSprite2D" parent="." unique_id=1451337396]
+[node name="Slot3" type="AnimatedSprite2D" parent="." unique_id=645148339]
+position = Vector2(-114, -184.99998)
+scale = Vector2(0.043074287, 0.0430743)
+sprite_frames = SubResource("SpriteFrames_tu0h3")
 script = ExtResource("3_df1we")
 
 [node name="Slot4" type="AnimatedSprite2D" parent="." unique_id=972060815]
+position = Vector2(-35.000008, -181)
+scale = Vector2(0.055984527, 0.059523776)
+sprite_frames = SubResource("SpriteFrames_g4v7s")
 script = ExtResource("3_df1we")
 
 [node name="Slot5" type="AnimatedSprite2D" parent="." unique_id=632317756]
+position = Vector2(-151, -184)
+scale = Vector2(0.036684785, 0.036684785)
+sprite_frames = SubResource("SpriteFrames_yf5fn")
 script = ExtResource("3_df1we")
 
 [node name="BetChange" type="Button" parent="." unique_id=2070456783]
-offset_left = 45.0
-offset_top = -85.0
-offset_right = 141.0
-offset_bottom = -54.0
+offset_left = -7.0
+offset_top = -445.0
+offset_right = 89.0
+offset_bottom = -414.0
 text = "Change bet"
 
+[node name="Label" type="Label" parent="BetChange" unique_id=229751203]
+layout_mode = 0
+offset_left = -87.0
+offset_top = -41.0
+offset_right = 83.0
+offset_bottom = -18.0
+text = "bet range: work in progress"
+
 [node name="SpinBox" type="SpinBox" parent="." unique_id=237794553]
-offset_left = -52.0
-offset_top = -85.0
-offset_right = 34.5
-offset_bottom = -54.0
+offset_left = -104.0
+offset_top = -445.0
+offset_right = -17.5
+offset_bottom = -414.0
 min_value = 10.0
 value = 10.0
 
 [connection signal="arm_pulled" from="Arm" to="Arm" method="_on_arm_pulled"]
-[connection signal="arm_pulled" from="Arm" to="Slot1" method="_on_arm_pulled"]
-[connection signal="arm_pulled" from="Arm" to="Slot2" method="_on_arm_pulled"]
-[connection signal="arm_pulled" from="Arm" to="Slot3" method="_on_arm_pulled"]
 [connection signal="arm_pulled" from="Arm" to="Slot4" method="_on_arm_pulled"]
 [connection signal="arm_pulled" from="Arm" to="Slot5" method="_on_arm_pulled"]
 [connection signal="mouse_entered" from="Arm" to="Arm" method="_on_mouse_entered"]

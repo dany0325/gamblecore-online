@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b7gdrggiaqosv"
-path="res://.godot/imported/slot-machine4.png-cb7d1a87801960f72f2f91fb683a6e5c.ctex"
+uid="uid://kst4k6npfurj"
+path="res://.godot/imported/slot-symbol1.png-97d2f1423ba63b32e20443cd873fc08c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Pixel Fantasy Slot Machine/Slot Machine/slot-machine4.png"
-dest_files=["res://.godot/imported/slot-machine4.png-cb7d1a87801960f72f2f91fb683a6e5c.ctex"]
+source_file="res://Assets/Pixel Fantasy Slot Machine/Slot Machine/slot-symbol1.png"
+dest_files=["res://.godot/imported/slot-symbol1.png-97d2f1423ba63b32e20443cd873fc08c.ctex"]
 
 [params]
 
