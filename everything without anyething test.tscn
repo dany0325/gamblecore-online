@@ -1,0 +1,76 @@
+[gd_scene format=3 uid="uid://d1n5p1gebcu21"]
+
+[ext_resource type="AudioStream" uid="uid://mm2shqjaaegr" path="res://Assets/Low Quality Portal Radio - ScratchTV.mp3" id="1_pi7jx"]
+[ext_resource type="Script" uid="uid://c81kcsmhgtk1o" path="res://Scripts/player.gd" id="2_j8b78"]
+[ext_resource type="PackedScene" uid="uid://bvrxhvj2s4ya6" path="res://Scenes/first_tier_slotmachine.tscn" id="3_ca2sa"]
+[ext_resource type="PackedScene" uid="uid://cn2nplratuhsk" path="res://Scenes/second_tier_slotmachine.tscn" id="4_u4kkj"]
+[ext_resource type="PackedScene" uid="uid://drt4uitqtw7k" path="res://Scenes/third_tier_slotmachine.tscn" id="5_y48wv"]
+
+[node name="Everything" type="Control" unique_id=477856086]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=716279339]
+stream = ExtResource("1_pi7jx")
+autoplay = true
+
+[node name="player" type="Node" parent="." unique_id=370587774]
+unique_name_in_owner = true
+script = ExtResource("2_j8b78")
+
+[node name="FirstTierSlotmachine" parent="." unique_id=1201141508 instance=ExtResource("3_ca2sa")]
+position = Vector2(178, 550)
+
+[node name="SecondTierSlotmachine" parent="." unique_id=1224911217 instance=ExtResource("4_u4kkj")]
+visible = false
+position = Vector2(582, 562)
+
+[node name="SecondTierSlotmachine2" parent="." unique_id=244695862 instance=ExtResource("5_y48wv")]
+visible = false
+position = Vector2(936, 523)
+
+[node name="aaaaaaaaaaaaaaaaaa" type="Button" parent="." unique_id=753752471]
+layout_mode = 0
+offset_left = 901.0
+offset_top = 75.0
+offset_right = 1152.0
+offset_bottom = 106.0
+size_flags_vertical = 8
+text = " "
+alignment = 0
+
+[node name="Loan_gib" type="Button" parent="." unique_id=126681763]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 0
+offset_left = 1055.0
+offset_top = 37.0
+offset_right = 1152.0
+offset_bottom = 68.0
+text = "give money"
+
+[node name="money_label" type="Label" parent="." unique_id=632864642]
+custom_minimum_size = Vector2(150, 30)
+layout_mode = 0
+offset_left = 978.0
+offset_right = 1128.0
+offset_bottom = 30.0
+size_flags_horizontal = 8
+size_flags_vertical = 0
+text = "Money: 10 gazillion"
+metadata/_edit_use_anchors_ = true
+
+[node name="debt_kabel" type="Label" parent="." unique_id=1526645487]
+custom_minimum_size = Vector2(150, 30)
+layout_mode = 0
+offset_left = 901.0
+offset_top = 37.0
+offset_right = 1051.0
+offset_bottom = 67.0
+size_flags_horizontal = 8
+size_flags_vertical = 0
+text = "Debt: even more"
+metadata/_edit_use_anchors_ = true

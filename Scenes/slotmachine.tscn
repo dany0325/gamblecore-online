@@ -1,11 +1,48 @@
 [gd_scene format=3 uid="uid://bvrxhvj2s4ya6"]
 
 [ext_resource type="Script" uid="uid://fytafa3cv6eb" path="res://Scripts/arm.gd" id="1_fad38"]
-[ext_resource type="Texture2D" uid="uid://dwrsjx011f1yc" path="res://Assets/wasser.jpg" id="2_0k3v5"]
+[ext_resource type="Texture2D" uid="uid://dnpag1x1o04k1" path="res://Assets/literal slot machine assets/johny brav slot machine.png" id="2_0twtj"]
+[ext_resource type="Texture2D" uid="uid://b2676817o4xd" path="res://Assets/Pixel Fantasy Slot Machine/Slot Machine/slot-machine5.png" id="3_6wnp6"]
 [ext_resource type="Script" uid="uid://cilcr6i0vjw2b" path="res://Scripts/slot.gd" id="3_34cmk"]
+[ext_resource type="Texture2D" uid="uid://dm3dbihbu0s0k" path="res://Assets/slot machine assets/6 art asset.png" id="4_utikg"]
+[ext_resource type="Texture2D" uid="uid://ixrpiqatar68" path="res://Assets/slot machine assets/7 art asset.png" id="6_e436n"]
+[ext_resource type="Texture2D" uid="uid://50cul8uuey3j" path="res://Assets/slot machine assets/cherry.png" id="7_lhx10"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bhunq"]
-size = Vector2(12, 54)
+size = Vector2(12, 186.53952)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6s8ql"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_utikg")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_utikg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_e436n")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_e436n"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_lhx10")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="Slotmachine" type="Node2D" unique_id=1201141508]
 
@@ -14,24 +51,71 @@ script = ExtResource("1_fad38")
 slots = Array[NodePath]([NodePath("../Slot1"), NodePath("../Slot2"), NodePath("../Slot3")])
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Arm" unique_id=1244028591]
+<<<<<<< Updated upstream:Scenes/slotmachine.tscn
 position = Vector2(20.000002, -2.000001)
 rotation = 0.3253765
 scale = Vector2(0.6918042, 0.8185523)
+=======
+position = Vector2(6.9999995, -150)
+scale = Vector2(24.224041, 1.8428035)
+>>>>>>> Stashed changes:Scenes/first_tier_slotmachine.tscn
 shape = SubResource("RectangleShape2D_bhunq")
 
 [node name="Sprite2D" type="Sprite2D" parent="Arm/CollisionShape2D" unique_id=1664507609]
-scale = Vector2(0.028436014, 0.124423936)
-texture = ExtResource("2_0k3v5")
+position = Vector2(0.41281283, 5.3602304)
+scale = Vector2(0.031265754, 0.395883)
+texture = ExtResource("2_0twtj")
+
+[node name="SlotMachine5" type="Sprite2D" parent="Arm" unique_id=304962437]
+position = Vector2(-32, -224)
+scale = Vector2(0.5355392, 0.43429488)
+texture = ExtResource("3_6wnp6")
 
 [node name="Slot1" type="AnimatedSprite2D" parent="." unique_id=563896733]
+position = Vector2(-99, -200)
+sprite_frames = SubResource("SpriteFrames_6s8ql")
 script = ExtResource("3_34cmk")
 
 [node name="Slot2" type="AnimatedSprite2D" parent="." unique_id=240168420]
+<<<<<<< Updated upstream:Scenes/slotmachine.tscn
+=======
+position = Vector2(-29, -202)
+sprite_frames = SubResource("SpriteFrames_utikg")
+>>>>>>> Stashed changes:Scenes/first_tier_slotmachine.tscn
 script = ExtResource("3_34cmk")
 
 [node name="Slot3" type="AnimatedSprite2D" parent="." unique_id=1451337396]
+position = Vector2(40, -202)
+scale = Vector2(0.06587837, 0.065878384)
+sprite_frames = SubResource("SpriteFrames_e436n")
 script = ExtResource("3_34cmk")
 
+<<<<<<< Updated upstream:Scenes/slotmachine.tscn
+=======
+[node name="BetChange" type="Button" parent="." unique_id=2070456783]
+offset_left = 23.0
+offset_top = -412.0
+offset_right = 119.0
+offset_bottom = -381.0
+text = "Change bet"
+
+[node name="SpinBox" type="SpinBox" parent="." unique_id=237794553]
+offset_left = -74.0
+offset_top = -412.0
+offset_right = 12.5
+offset_bottom = -381.0
+min_value = 1.0
+max_value = 10.0
+value = 1.0
+
+[node name="Label" type="Label" parent="." unique_id=2107050340]
+offset_left = -64.0
+offset_top = -446.0
+offset_right = 106.0
+offset_bottom = -423.0
+text = "bet range: work in progress"
+
+>>>>>>> Stashed changes:Scenes/first_tier_slotmachine.tscn
 [connection signal="arm_pulled" from="Arm" to="Arm" method="_on_arm_pulled"]
 [connection signal="arm_pulled" from="Arm" to="Slot1" method="_on_arm_pulled"]
 [connection signal="arm_pulled" from="Arm" to="Slot2" method="_on_arm_pulled"]
