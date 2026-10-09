@@ -1,56 +1,59 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1791503882
-credit.txt::TextFile::-1::1791498135::0::1::::<><><>0<>0<><>::
-Final slot machine concept.png::CompressedTexture2D::8112397363435567223::1790920136::1791320100::1::::<><><>0<>0<>56e946c7a71207da6565ba4674e35291<>res://.godot/imported/Final slot machine concept.png-512f35d1fdd2a4d16ac726c9d8369029.ctex::
-Gamblecore ui otlet.png::CompressedTexture2D::7575912320693531857::1790920136::1791320100::1::::<><><>0<>0<>8ca18fcda9d1db7f31b30e392239f516<>res://.godot/imported/Gamblecore ui otlet.png-d72b67d0218d5e72c961859bfb9814a0.ctex::
-link to assets.txt::TextFile::-1::1791236533::0::1::::<><><>0<>0<><>::
-link to slot machine assets.txt::TextFile::-1::1790920208::0::1::::<><><>0<>0<><>::
-LinkToTheDocumantation.txt::TextFile::-1::1791235964::0::1::::<><><>0<>0<><>::
-TrelloLink.txt::TextFile::-1::1791235964::0::1::::<><><>0<>0<><>::
-::res://Assets/::1791503915
-gamblecore online title.png::CompressedTexture2D::3237736384520260078::1791485232::1791485232::1::::<><><>0<>0<>bf31d1bd8a2c5e2c153fc16764c0ffcc<>res://.godot/imported/gamblecore online title.png-820eb1c64e8c8f900940a33e1b873b23.ctex::
-Low Quality Portal Radio - ScratchTV.mp3::AudioStreamMP3::868710552589333901::1791496616::1791496617::1::::<><><>0<>0<>a1ce27a0bf24a6780bb285c64e24cb7b<>res://.godot/imported/Low Quality Portal Radio - ScratchTV.mp3-417c1cf180300bde709d802b9ea278c3.mp3str::
-::res://Assets/literal slot machine assets/::1791503923
-captain clark gambling empire slot machine.png::CompressedTexture2D::3539140918545856100::1791503922::1791503923::1::::<><><>0<>0<>7ccc6905000186c50c8a9268e24d9241<>res://.godot/imported/captain clark gambling empire slot machine.png-03ea51f896f7fe382ac4fa6b7b30e206.ctex::
-craft mine slot machine.png::CompressedTexture2D::2045289073252060652::1791503922::1791503923::1::::<><><>0<>0<>40420c6d27182d8f6ba67c3d52764575<>res://.godot/imported/craft mine slot machine.png-9cfb890df126bcc0c99369cb771cbdd1.ctex::
-johny brav slot machine.png::CompressedTexture2D::8102694801786701706::1791503922::1791503923::1::::<><><>0<>0<>dcbe9e0bf633138145734e6d0605dd32<>res://.godot/imported/johny brav slot machine.png-672da5c7366d57ab7c7c7bf9e1e5af11.ctex::
-::res://Assets/Pixel Fantasy Slot Machine/::1791235964
-EULA - READ ME.txt::TextFile::-1::1791235964::0::1::::<><><>0<>0<><>::
-::res://Assets/Pixel Fantasy Slot Machine/Slot Machine/::1791491723
-slot-machine1.png::CompressedTexture2D::4998505844029260747::1791235964::1791491723::1::::<><><>0<>0<>f91d349e8a8eebd7a34e966fc9d6b0d4<>res://.godot/imported/slot-machine1.png-ba921f6aebb21c4021aeb9290e346412.ctex::
-slot-machine2.png::CompressedTexture2D::7024022449030677912::1791235964::1791491723::1::::<><><>0<>0<>68ebbb5edd636d6fd5afb066d020e86d<>res://.godot/imported/slot-machine2.png-46945f3c70ea92e7464811d5bb176f09.ctex::
-slot-machine3.png::CompressedTexture2D::1463880959954829835::1791235964::1791491723::1::::<><><>0<>0<>77aa4f1807beb7d3f907380d37e8a888<>res://.godot/imported/slot-machine3.png-1d97c12c13180c6ef611164b00a8e1bd.ctex::
-slot-machine4.png::CompressedTexture2D::4645062780882235057::1791235964::1791491723::1::::<><><>0<>0<>14f719f34c4c8f8a8cfd01f34f33c711<>res://.godot/imported/slot-machine4.png-219374ed8e2952cb2f958ed1035764c9.ctex::
-slot-machine5.png::CompressedTexture2D::127868095605431925::1791235964::1791491723::1::::<><><>0<>0<>8754fa1af918afd67a596983adcb58bd<>res://.godot/imported/slot-machine5.png-221ad937af21c6ce931cd697d2fe5300.ctex::
-slot-symbol1.png::CompressedTexture2D::740253220572568723::1791235964::1791491723::1::::<><><>0<>0<>ec8d7cde7ed09a6cda07f1425195227e<>res://.godot/imported/slot-symbol1.png-97d2f1423ba63b32e20443cd873fc08c.ctex::
-slot-symbol2.png::CompressedTexture2D::191046776119453300::1791235964::1791491723::1::::<><><>0<>0<>9e7945cc5df4a88a027124f2c2199ea9<>res://.godot/imported/slot-symbol2.png-ed96df2e7e68dd2a1ada58db1ae10c95.ctex::
-slot-symbol3.png::CompressedTexture2D::6116394947395890542::1791235964::1791491723::1::::<><><>0<>0<>add980c0a442bc4b2fc339ed15e9b7d4<>res://.godot/imported/slot-symbol3.png-b270a7f57cb6a267f159e4a3b5843934.ctex::
-slot-symbol4.png::CompressedTexture2D::2841481184404950093::1791235964::1791491723::1::::<><><>0<>0<>882532a7cd511529cb4517dae668ce5c<>res://.godot/imported/slot-symbol4.png-a22db3b304e7f5d61c9d3cf065dc023a.ctex::
-::res://Assets/placeholder folder/::1791493900
-2801.jpg::CompressedTexture2D::5714100108481183461::1791327689::1791484326::1::::<><><>0<>0<>57980d2a204d26c7d34d921207a53fe4<>res://.godot/imported/2801.jpg-9639206646448af0056780c35e106dab.ctex::
-HGAlPxiW4AAF77I.jpg::CompressedTexture2D::454758043091414907::1791235964::1791484333::1::::<><><>0<>0<>b9fa9f496c5a0b9e0ebd26cae3419e43<>res://.godot/imported/HGAlPxiW4AAF77I.jpg-9a1acd48a026d73e902b44330806dfb0.ctex::
-icon.svg::CompressedTexture2D::4895030881431030067::1791235964::1791484343::1::::<><><>0<>0<>46affa85520837d2ea432f7506041a8b<>res://.godot/imported/icon.svg-a6ce1bf8942ecfe41c0275cfd1cf92f3.ctex::
-wasser.jpg::CompressedTexture2D::8739621258823429090::1791235964::1791484349::1::::<><><>0<>0<>b92ce0de5ade1443f3b11ab72509fd2c<>res://.godot/imported/wasser.jpg-e6d8366bcc3e69b5261662abc5294db3.ctex::
-::res://Assets/slot machine assets/::1791506221
-6 art asset.png::CompressedTexture2D::8059515119695168268::1791236739::1791484525::1::::<><><>0<>0<>db356cec6e3dabb506fcf6a61c18fe20<>res://.godot/imported/6 art asset.png-09389338d81028f03ea54ec70a7c630b.ctex::
-7 art asset.png::CompressedTexture2D::610050858162320179::1791236533::1791484525::1::::<><><>0<>0<>e71e51566bb6204db738777d8b49b3c6<>res://.godot/imported/7 art asset.png-26018d156bda1837316a96604ef1fa1e.ctex::
-7 art insipration.jpg::CompressedTexture2D::5693296333594947569::1791236533::1791484525::1::::<><><>0<>0<>fb234f59a02b419d7ac36555f815c90b<>res://.godot/imported/7 art insipration.jpg-efb15ee5dd18d441542429a241b8d7c4.ctex::
-cherry.png::CompressedTexture2D::2157432532527115201::1791505404::1791505520::1::::<><><>0<>0<>6e1c5d833727243df87cbe6dbe0fadc4<>res://.godot/imported/cherry.png-8bf6dde45ece8c803724e0467bc2b39c.ctex::
-clover.jpg::CompressedTexture2D::7504999481260526561::1791236533::1791484525::1::::<><><>0<>0<>503b82d6bafc6aac564e0a77f073b2d2<>res://.godot/imported/clover.jpg-51b8af9d630f6054471961fa0741ace3.ctex::
-clover.png::CompressedTexture2D::6057200264942189902::1791506221::1791506227::1::::<><><>0<>0<>1d64531c54cfe85c7e203fda4fad2619<>res://.godot/imported/clover.png-d59e4dbe0a9675f2ab1b360a1c2325bb.ctex::
-coin.png::CompressedTexture2D::6958113917590349349::1791493880::1791493910::1::::<><><>0<>0<>ffcf84d8ffeb90ab4f9a5fefb69e91f8<>res://.godot/imported/coin.png-73f7029b5c1d3ce998caf71e338ae9f5.ctex::
-diamond.jpg::CompressedTexture2D::1049226684496670263::1791236533::1791484525::1::::<><><>0<>0<>5cb523534990be7e6b068880534cb93e<>res://.godot/imported/diamond.jpg-4e4dc9df9f15e65b450df53a4baddc54.ctex::
-diamond.png::CompressedTexture2D::6010571674366785611::1791505465::1791505520::1::::<><><>0<>0<>4a0e309f2123ac0563f55fe2d952aa11<>res://.godot/imported/diamond.png-5ff3bcf863392be5a3f03c3562881544.ctex::
-lightning.jpg::CompressedTexture2D::7128438874868193864::1791236533::1791484534::1::::<><><>0<>0<>097bb64d0cb08441f051a22d9a8761d5<>res://.godot/imported/lightning.jpg-4f5f87342f6dddbe08ba0141f8afe04b.ctex::
-lightning.png::CompressedTexture2D::4841356866239056742::1791505499::1791505520::1::::<><><>0<>0<>57d266c04187782a6d8e548a9089fafc<>res://.godot/imported/lightning.png-3eaf392eb98a9585c6b37a4f1b275e83.ctex::
-scam.png::CompressedTexture2D::1297739132034183241::1791494337::1791494338::1::::<><><>0<>0<>129d6d8097565e8714d605ea9f3a6f55<>res://.godot/imported/scam.png-9d0ee36a61d8e4201e44eb70e20836d8.ctex::
-::res://Scenes/::1791505950
-everything.tscn::PackedScene::601353085777542233::1791504545::0::1::::<><><>0<>0<><>::uid://bmenbsjc5ebv7::::res://Assets/gamblecore online title.png<>uid://sqvtrowvmxhp::::res://Assets/slot machine assets/scam.png<>uid://c81kcsmhgtk1o::::res://Scripts/player.gd<>uid://mm2shqjaaegr::::res://Assets/Low Quality Portal Radio - ScratchTV.mp3<>uid://bvrxhvj2s4ya6::::res://Scenes/first_tier_slotmachine.tscn<>uid://cn2nplratuhsk::::res://Scenes/second_tier_slotmachine.tscn<>uid://drt4uitqtw7k::::res://Scenes/third_tier_slotmachine.tscn
-first_tier_slotmachine.tscn::PackedScene::3896890931447331111::1791505693::0::1::::<><><>0<>0<><>::uid://fytafa3cv6eb::::res://Scripts/arm.gd<>uid://dnpag1x1o04k1::::res://Assets/literal slot machine assets/johny brav slot machine.png<>uid://b2676817o4xd::::res://Assets/Pixel Fantasy Slot Machine/Slot Machine/slot-machine5.png<>uid://cilcr6i0vjw2b::::res://Scripts/slot.gd<>uid://dm3dbihbu0s0k::::res://Assets/slot machine assets/6 art asset.png<>uid://ixrpiqatar68::::res://Assets/slot machine assets/7 art asset.png<>uid://50cul8uuey3j::::res://Assets/slot machine assets/cherry.png
-game.tscn::PackedScene::2973982191237849876::1791486656::0::1::::<><><>0<>0<><>::uid://bvrxhvj2s4ya6::::res://Scenes/first_tier_slotmachine.tscn<>uid://c81kcsmhgtk1o::::res://Scripts/player.gd<>uid://cn2nplratuhsk::::res://Scenes/second_tier_slotmachine.tscn<>uid://drt4uitqtw7k::::res://Scenes/third_tier_slotmachine.tscn
-second_tier_slotmachine.tscn::PackedScene::5741851245899486362::1791505950::0::1::::<><><>0<>0<><>::uid://fytafa3cv6eb::::res://Scripts/arm.gd<>uid://4e0u2ysi87t5::::res://Assets/literal slot machine assets/craft mine slot machine.png<>uid://cilcr6i0vjw2b::::res://Scripts/slot.gd<>uid://b2676817o4xd::::res://Assets/Pixel Fantasy Slot Machine/Slot Machine/slot-machine5.png<>uid://dm3dbihbu0s0k::::res://Assets/slot machine assets/6 art asset.png<>uid://ixrpiqatar68::::res://Assets/slot machine assets/7 art asset.png<>uid://50cul8uuey3j::::res://Assets/slot machine assets/cherry.png<>uid://crvticlxakqp4::::res://Assets/slot machine assets/diamond.png<>uid://ca8go76208j1w::::res://Assets/slot machine assets/lightning.png
-third_tier_slotmachine.tscn::PackedScene::246867427329784090::1791504388::0::1::::<><><>0<>0<><>::uid://fytafa3cv6eb::::res://Scripts/arm.gd<>uid://bqonesy8id1f1::::res://Assets/literal slot machine assets/captain clark gambling empire slot machine.png<>uid://cilcr6i0vjw2b::::res://Scripts/slot.gd
-::res://Scripts/::1791504545
-arm.gd::GDScript::401643171042635981::1791504545::0::1::::<>Area2D<><>0<>0<><>::
-player.gd::GDScript::7143358734847080194::1791498041::0::1::::<>Node<><>0<>0<><>::
-slot.gd::GDScript::5357213706013653415::1791327689::0::1::::<>AnimatedSprite2D<><>0<>0<><>::
+::res://::1791535030
+credit.txt::TextFile::-1::1791528571::0::1::::<><><>0<>0<><>::
+diamond.jpg::CompressedTexture2D::344951759986402851::1791528592::1791535031::1::::<><><>0<>0<>7b86c7edbf7f4c986c92da569e16b4d5<>res://.godot/imported/diamond.jpg-c9d5cb0286d2ac5b52da5cbabe584023.ctex::
+everything without anyething test.tscn::PackedScene::9012858568221600544::1791528571::0::1::::<><><>0<>0<><>::uid://mm2shqjaaegr::::res://Assets/Low Quality Portal Radio - ScratchTV.mp3<>uid://c81kcsmhgtk1o::::res://Scripts/player.gd<>uid://bvrxhvj2s4ya6::::res://Scenes/first_tier_slotmachine.tscn<>uid://cn2nplratuhsk::::res://Scenes/second_tier_slotmachine.tscn<>uid://drt4uitqtw7k::::res://Scenes/third_tier_slotmachine.tscn
+Final slot machine concept.png::CompressedTexture2D::8112397363435567223::1791531685::1791531685::1::::<><><>0<>0<>56e946c7a71207da6565ba4674e35291<>res://.godot/imported/Final slot machine concept.png-512f35d1fdd2a4d16ac726c9d8369029.ctex::
+Gamblecore ui otlet.png::CompressedTexture2D::7575912320693531857::1791531685::1791531685::1::::<><><>0<>0<>8ca18fcda9d1db7f31b30e392239f516<>res://.godot/imported/Gamblecore ui otlet.png-d72b67d0218d5e72c961859bfb9814a0.ctex::
+link to assets.txt::TextFile::-1::1791531685::0::1::::<><><>0<>0<><>::
+link to slot machine assets.txt::TextFile::-1::1791531685::0::1::::<><><>0<>0<><>::
+LinkToTheDocumantation.txt::TextFile::-1::1791531685::0::1::::<><><>0<>0<><>::
+TrelloLink.txt::TextFile::-1::1791531685::0::1::::<><><>0<>0<><>::
+::res://Assets/::1791534958
+2801.jpg::CompressedTexture2D::5714100108481183461::1791531685::1791531750::1::::<><><>0<>0<>d637f963f7dc6f2e47ba914c5b5f10d9<>res://.godot/imported/2801.jpg-a4b632e930ff5f42d1b552a40e1c533e.ctex::
+gamblecore online title.png::CompressedTexture2D::3237736384520260078::1791528571::1791529298::1::::<><><>0<>0<>bf31d1bd8a2c5e2c153fc16764c0ffcc<>res://.godot/imported/gamblecore online title.png-820eb1c64e8c8f900940a33e1b873b23.ctex::
+Low Quality Portal Radio - ScratchTV.mp3::AudioStreamMP3::868710552589333901::1791528571::1791529298::1::::<><><>0<>0<>a1ce27a0bf24a6780bb285c64e24cb7b<>res://.godot/imported/Low Quality Portal Radio - ScratchTV.mp3-417c1cf180300bde709d802b9ea278c3.mp3str::
+::res://Assets/literal slot machine assets/::1791529298
+captain clark gambling empire slot machine.png::CompressedTexture2D::3539140918545856100::1791528571::1791529298::1::::<><><>0<>0<>7ccc6905000186c50c8a9268e24d9241<>res://.godot/imported/captain clark gambling empire slot machine.png-03ea51f896f7fe382ac4fa6b7b30e206.ctex::
+craft mine slot machine.png::CompressedTexture2D::2045289073252060652::1791528571::1791529298::1::::<><><>0<>0<>40420c6d27182d8f6ba67c3d52764575<>res://.godot/imported/craft mine slot machine.png-9cfb890df126bcc0c99369cb771cbdd1.ctex::
+johny brav slot machine.png::CompressedTexture2D::8102694801786701706::1791528571::1791529298::1::::<><><>0<>0<>dcbe9e0bf633138145734e6d0605dd32<>res://.godot/imported/johny brav slot machine.png-672da5c7366d57ab7c7c7bf9e1e5af11.ctex::
+::res://Assets/Pixel Fantasy Slot Machine/::1791528571
+EULA - READ ME.txt::TextFile::-1::1791528571::0::1::::<><><>0<>0<><>::
+::res://Assets/Pixel Fantasy Slot Machine/Slot Machine/::1791529298
+slot-machine1.png::CompressedTexture2D::4998505844029260747::1791528571::1791529298::1::::<><><>0<>0<>f91d349e8a8eebd7a34e966fc9d6b0d4<>res://.godot/imported/slot-machine1.png-ba921f6aebb21c4021aeb9290e346412.ctex::
+slot-machine2.png::CompressedTexture2D::7024022449030677912::1791528571::1791529298::1::::<><><>0<>0<>68ebbb5edd636d6fd5afb066d020e86d<>res://.godot/imported/slot-machine2.png-46945f3c70ea92e7464811d5bb176f09.ctex::
+slot-machine3.png::CompressedTexture2D::1463880959954829835::1791528571::1791529298::1::::<><><>0<>0<>77aa4f1807beb7d3f907380d37e8a888<>res://.godot/imported/slot-machine3.png-1d97c12c13180c6ef611164b00a8e1bd.ctex::
+slot-machine4.png::CompressedTexture2D::4645062780882235057::1791528571::1791529298::1::::<><><>0<>0<>14f719f34c4c8f8a8cfd01f34f33c711<>res://.godot/imported/slot-machine4.png-219374ed8e2952cb2f958ed1035764c9.ctex::
+slot-machine5.png::CompressedTexture2D::127868095605431925::1791528571::1791529298::1::::<><><>0<>0<>8754fa1af918afd67a596983adcb58bd<>res://.godot/imported/slot-machine5.png-221ad937af21c6ce931cd697d2fe5300.ctex::
+slot-symbol1.png::CompressedTexture2D::740253220572568723::1791528571::1791529298::1::::<><><>0<>0<>ec8d7cde7ed09a6cda07f1425195227e<>res://.godot/imported/slot-symbol1.png-97d2f1423ba63b32e20443cd873fc08c.ctex::
+slot-symbol2.png::CompressedTexture2D::191046776119453300::1791528571::1791529298::1::::<><><>0<>0<>9e7945cc5df4a88a027124f2c2199ea9<>res://.godot/imported/slot-symbol2.png-ed96df2e7e68dd2a1ada58db1ae10c95.ctex::
+slot-symbol3.png::CompressedTexture2D::6116394947395890542::1791528571::1791529298::1::::<><><>0<>0<>add980c0a442bc4b2fc339ed15e9b7d4<>res://.godot/imported/slot-symbol3.png-b270a7f57cb6a267f159e4a3b5843934.ctex::
+slot-symbol4.png::CompressedTexture2D::2841481184404950093::1791528571::1791529298::1::::<><><>0<>0<>882532a7cd511529cb4517dae668ce5c<>res://.godot/imported/slot-symbol4.png-a22db3b304e7f5d61c9d3cf065dc023a.ctex::
+::res://Assets/placeholder folder/::1791529298
+2801.jpg::CompressedTexture2D::5714100108481183461::1791528571::1791529298::1::::<><><>0<>0<>57980d2a204d26c7d34d921207a53fe4<>res://.godot/imported/2801.jpg-9639206646448af0056780c35e106dab.ctex::
+HGAlPxiW4AAF77I.jpg::CompressedTexture2D::454758043091414907::1791528571::1791529298::1::::<><><>0<>0<>b9fa9f496c5a0b9e0ebd26cae3419e43<>res://.godot/imported/HGAlPxiW4AAF77I.jpg-9a1acd48a026d73e902b44330806dfb0.ctex::
+icon.svg::CompressedTexture2D::4895030881431030067::1791528571::1791529298::1::::<><><>0<>0<>46affa85520837d2ea432f7506041a8b<>res://.godot/imported/icon.svg-a6ce1bf8942ecfe41c0275cfd1cf92f3.ctex::
+wasser.jpg::CompressedTexture2D::8739621258823429090::1791528571::1791529298::1::::<><><>0<>0<>b92ce0de5ade1443f3b11ab72509fd2c<>res://.godot/imported/wasser.jpg-e6d8366bcc3e69b5261662abc5294db3.ctex::
+::res://Assets/slot machine assets/::1791529298
+6 art asset.png::CompressedTexture2D::8059515119695168268::1791528571::1791529298::1::::<><><>0<>0<>db356cec6e3dabb506fcf6a61c18fe20<>res://.godot/imported/6 art asset.png-09389338d81028f03ea54ec70a7c630b.ctex::
+7 art asset.png::CompressedTexture2D::610050858162320179::1791528571::1791529298::1::::<><><>0<>0<>e71e51566bb6204db738777d8b49b3c6<>res://.godot/imported/7 art asset.png-26018d156bda1837316a96604ef1fa1e.ctex::
+7 art insipration.jpg::CompressedTexture2D::5693296333594947569::1791528571::1791529298::1::::<><><>0<>0<>fb234f59a02b419d7ac36555f815c90b<>res://.godot/imported/7 art insipration.jpg-efb15ee5dd18d441542429a241b8d7c4.ctex::
+cherry.png::CompressedTexture2D::2157432532527115201::1791528571::1791529298::1::::<><><>0<>0<>6e1c5d833727243df87cbe6dbe0fadc4<>res://.godot/imported/cherry.png-8bf6dde45ece8c803724e0467bc2b39c.ctex::
+clover.jpg::CompressedTexture2D::7504999481260526561::1791528571::1791529298::1::::<><><>0<>0<>503b82d6bafc6aac564e0a77f073b2d2<>res://.godot/imported/clover.jpg-51b8af9d630f6054471961fa0741ace3.ctex::
+clover.png::CompressedTexture2D::6057200264942189902::1791528571::1791529298::1::::<><><>0<>0<>1d64531c54cfe85c7e203fda4fad2619<>res://.godot/imported/clover.png-d59e4dbe0a9675f2ab1b360a1c2325bb.ctex::
+coin.png::CompressedTexture2D::6958113917590349349::1791528571::1791529298::1::::<><><>0<>0<>ffcf84d8ffeb90ab4f9a5fefb69e91f8<>res://.godot/imported/coin.png-73f7029b5c1d3ce998caf71e338ae9f5.ctex::
+diamond.jpg::CompressedTexture2D::1049226684496670263::1791528571::1791529298::1::::<><><>0<>0<>5cb523534990be7e6b068880534cb93e<>res://.godot/imported/diamond.jpg-4e4dc9df9f15e65b450df53a4baddc54.ctex::
+diamond.png::CompressedTexture2D::6010571674366785611::1791528571::1791529298::1::::<><><>0<>0<>4a0e309f2123ac0563f55fe2d952aa11<>res://.godot/imported/diamond.png-5ff3bcf863392be5a3f03c3562881544.ctex::
+lightning.jpg::CompressedTexture2D::7128438874868193864::1791528571::1791529298::1::::<><><>0<>0<>097bb64d0cb08441f051a22d9a8761d5<>res://.godot/imported/lightning.jpg-4f5f87342f6dddbe08ba0141f8afe04b.ctex::
+lightning.png::CompressedTexture2D::4841356866239056742::1791528571::1791529298::1::::<><><>0<>0<>57d266c04187782a6d8e548a9089fafc<>res://.godot/imported/lightning.png-3eaf392eb98a9585c6b37a4f1b275e83.ctex::
+scam.png::CompressedTexture2D::1297739132034183241::1791528571::1791529298::1::::<><><>0<>0<>129d6d8097565e8714d605ea9f3a6f55<>res://.godot/imported/scam.png-9d0ee36a61d8e4201e44eb70e20836d8.ctex::
+::res://Scenes/::1791534958
+everything.tscn::PackedScene::601353085777542233::1791532009::0::1::::<><><>0<>0<><>::uid://bmenbsjc5ebv7::::res://Assets/gamblecore online title.png<>uid://sqvtrowvmxhp::::res://Assets/slot machine assets/scam.png<>uid://c81kcsmhgtk1o::::res://Scripts/player.gd<>uid://mm2shqjaaegr::::res://Assets/Low Quality Portal Radio - ScratchTV.mp3<>uid://bvrxhvj2s4ya6::::res://Scenes/first_tier_slotmachine.tscn<>uid://cn2nplratuhsk::::res://Scenes/second_tier_slotmachine.tscn<>uid://drt4uitqtw7k::::res://Scenes/third_tier_slotmachine.tscn
+first_tier_slotmachine.tscn::PackedScene::3896890931447331111::1791534958::0::1::::<><><>0<>0<><>::uid://fytafa3cv6eb::::res://Scripts/arm.gd<>uid://dnpag1x1o04k1::::res://Assets/literal slot machine assets/johny brav slot machine.png<>uid://b2676817o4xd::::res://Assets/Pixel Fantasy Slot Machine/Slot Machine/slot-machine5.png<>uid://cilcr6i0vjw2b::::res://Scripts/slot.gd<>uid://dm3dbihbu0s0k::::res://Assets/slot machine assets/6 art asset.png<>uid://ixrpiqatar68::::res://Assets/slot machine assets/7 art asset.png<>uid://50cul8uuey3j::::res://Assets/slot machine assets/cherry.png
+game.tscn::PackedScene::2973982191237849876::1791532371::0::1::::<><><>0<>0<><>::uid://bvrxhvj2s4ya6::::res://Scenes/first_tier_slotmachine.tscn<>uid://c81kcsmhgtk1o::::res://Scripts/player.gd<>uid://cn2nplratuhsk::::res://Scenes/second_tier_slotmachine.tscn<>uid://drt4uitqtw7k::::res://Scenes/third_tier_slotmachine.tscn
+second_tier_slotmachine.tscn::PackedScene::5741851245899486362::1791534958::0::1::::<><><>0<>0<><>::uid://fytafa3cv6eb::::res://Scripts/arm.gd<>uid://4e0u2ysi87t5::::res://Assets/literal slot machine assets/craft mine slot machine.png<>uid://cilcr6i0vjw2b::::res://Scripts/slot.gd<>uid://b2676817o4xd::::res://Assets/Pixel Fantasy Slot Machine/Slot Machine/slot-machine5.png<>uid://dm3dbihbu0s0k::::res://Assets/slot machine assets/6 art asset.png<>uid://ixrpiqatar68::::res://Assets/slot machine assets/7 art asset.png<>uid://50cul8uuey3j::::res://Assets/slot machine assets/cherry.png<>uid://crvticlxakqp4::::res://Assets/slot machine assets/diamond.png<>uid://ca8go76208j1w::::res://Assets/slot machine assets/lightning.png
+third_tier_slotmachine.tscn::PackedScene::246867427329784090::1791534958::0::1::::<><><>0<>0<><>::uid://fytafa3cv6eb::::res://Scripts/arm.gd<>uid://bqonesy8id1f1::::res://Assets/literal slot machine assets/captain clark gambling empire slot machine.png<>uid://cilcr6i0vjw2b::::res://Scripts/slot.gd<>uid://b2676817o4xd::::res://Assets/Pixel Fantasy Slot Machine/Slot Machine/slot-machine5.png<>uid://dm3dbihbu0s0k::::res://Assets/slot machine assets/6 art asset.png<>uid://ixrpiqatar68::::res://Assets/slot machine assets/7 art asset.png<>uid://cskfg6ei2xegk::::res://Assets/slot machine assets/clover.png
+::res://Scripts/::1791534958
+arm.gd::GDScript::401643171042635981::1791534958::0::1::::<>Area2D<><>0<>0<><>::
+player.gd::GDScript::7143358734847080194::1791534958::0::1::::<>Node<><>0<>0<><>::
+slot.gd::GDScript::5357213706013653415::1791531685::0::1::::<>AnimatedSprite2D<><>0<>0<><>::
