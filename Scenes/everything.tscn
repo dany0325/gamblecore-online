@@ -1,6 +1,5 @@
 [gd_scene format=3 uid="uid://itkgyjehh802"]
 
-[ext_resource type="Texture2D" uid="uid://bmenbsjc5ebv7" path="res://Assets/gamblecore online title.png" id="1_4yxfw"]
 [ext_resource type="Texture2D" uid="uid://sqvtrowvmxhp" path="res://Assets/slot machine assets/scam.png" id="3_2hopx"]
 [ext_resource type="Script" uid="uid://c81kcsmhgtk1o" path="res://Scripts/player.gd" id="4_4yxfw"]
 [ext_resource type="AudioStream" uid="uid://mm2shqjaaegr" path="res://Assets/Low Quality Portal Radio - ScratchTV.mp3" id="4_flokd"]
@@ -16,109 +15,17 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Screen" type="MarginContainer" parent="." unique_id=2144294604]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/margin_top = 0
-
-[node name="Main Menu" type="MarginContainer" parent="Screen" unique_id=1799175372]
-layout_mode = 2
-
-[node name="VBoxContainer" type="VBoxContainer" parent="Screen/Main Menu" unique_id=2009199391]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 0
-theme_override_constants/separation = 75
-
-[node name="Control" type="Control" parent="Screen/Main Menu/VBoxContainer" unique_id=901027664]
-layout_mode = 2
-
-[node name="Main menu title" type="MarginContainer" parent="Screen/Main Menu/VBoxContainer" unique_id=1924046661]
-layout_mode = 2
-
-[node name="NinePatchRect" type="NinePatchRect" parent="Screen/Main Menu/VBoxContainer/Main menu title" unique_id=1812854228]
-custom_minimum_size = Vector2(300, 300)
-layout_mode = 2
-texture = ExtResource("1_4yxfw")
-
-[node name="Button" type="Button" parent="Screen/Main Menu/VBoxContainer" unique_id=182169128]
-custom_minimum_size = Vector2(200, 100)
-layout_mode = 2
-theme_override_font_sizes/font_size = 50
-text = "Start"
-
-[node name="MarginContainer" type="MarginContainer" parent="Screen" unique_id=1180888072]
-custom_minimum_size = Vector2(280, 100)
-layout_mode = 2
-size_flags_horizontal = 8
-size_flags_vertical = 0
-
-[node name="VBoxContainer" type="VBoxContainer" parent="Screen/MarginContainer" unique_id=1946332950]
-layout_mode = 2
-size_flags_horizontal = 8
-size_flags_vertical = 0
-theme_override_constants/separation = 7
-
-[node name="HBoxContainer" type="HBoxContainer" parent="Screen/MarginContainer/VBoxContainer" unique_id=2123596014]
-layout_mode = 2
-size_flags_horizontal = 8
-size_flags_vertical = 0
-
-[node name="money_label" type="Label" parent="Screen/MarginContainer/VBoxContainer/HBoxContainer" unique_id=632864642]
-custom_minimum_size = Vector2(150, 30)
-layout_mode = 2
-size_flags_horizontal = 8
-size_flags_vertical = 0
-text = "Money: 10 gazillion"
-metadata/_edit_use_anchors_ = true
-
-[node name="coin node" type="NinePatchRect" parent="Screen/MarginContainer/VBoxContainer/HBoxContainer" unique_id=798062355]
-custom_minimum_size = Vector2(20, 20)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-texture = ExtResource("3_2hopx")
-
-[node name="HBoxContainer2" type="HBoxContainer" parent="Screen/MarginContainer/VBoxContainer" unique_id=1543496920]
-layout_mode = 2
-size_flags_horizontal = 8
-size_flags_vertical = 0
-
-[node name="debt_kabel" type="Label" parent="Screen/MarginContainer/VBoxContainer/HBoxContainer2" unique_id=1526645487]
-custom_minimum_size = Vector2(150, 30)
-layout_mode = 2
-size_flags_horizontal = 8
-size_flags_vertical = 0
-text = "Debt: even more"
-metadata/_edit_use_anchors_ = true
-
-[node name="Loan_gib" type="Button" parent="Screen/MarginContainer/VBoxContainer/HBoxContainer2" unique_id=126681763]
-custom_minimum_size = Vector2(20, 0)
-layout_mode = 2
-text = "give money"
-
-[node name="aaaaaaaaaaaaaaaaaa" type="Button" parent="Screen/MarginContainer/VBoxContainer" unique_id=753752471]
-layout_mode = 2
-size_flags_vertical = 8
-text = " "
-alignment = 0
-
-[node name="Label" type="Label" parent="Screen/MarginContainer" unique_id=217897855]
-layout_mode = 2
-size_flags_vertical = 8
-text = "Pay loan"
-
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=716279339]
 stream = ExtResource("4_flokd")
 autoplay = true
 
-[node name="player" type="Node" parent="." unique_id=370587774]
+[node name="player" type="Node" parent="." unique_id=370587774 node_paths=PackedStringArray("money_label", "debt_kabel", "loan_gib", "aaaaaaaaaaaaaaaaa")]
 unique_name_in_owner = true
 script = ExtResource("4_4yxfw")
+money_label = NodePath("../Screen/MarginContainer/VBoxContainer/HBoxContainer/money_label")
+debt_kabel = NodePath("../Screen/MarginContainer/VBoxContainer/HBoxContainer2/debt_kabel")
+loan_gib = NodePath("../Screen/MarginContainer/VBoxContainer/HBoxContainer2/Loan_gib")
+aaaaaaaaaaaaaaaaa = NodePath("../Screen/MarginContainer/VBoxContainer/aaaaaaaaaaaaaaaaaa")
 
 [node name="FirstTierSlotmachine" parent="." unique_id=1201141508 instance=ExtResource("5_flokd")]
 position = Vector2(178, 550)
@@ -128,3 +35,73 @@ position = Vector2(582, 562)
 
 [node name="SecondTierSlotmachine2" parent="." unique_id=244695862 instance=ExtResource("7_iwlc4")]
 position = Vector2(936, 523)
+
+[node name="Screen" type="MarginContainer" parent="." unique_id=2078702220]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_top = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="Screen" unique_id=2040293861]
+custom_minimum_size = Vector2(280, 100)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Screen/MarginContainer" unique_id=1173261223]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+theme_override_constants/separation = 7
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Screen/MarginContainer/VBoxContainer" unique_id=1566421972]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+
+[node name="money_label" type="Label" parent="Screen/MarginContainer/VBoxContainer/HBoxContainer" unique_id=193147454]
+custom_minimum_size = Vector2(150, 30)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+text = "Money: 10 gazillion"
+metadata/_edit_use_anchors_ = true
+
+[node name="coin node" type="NinePatchRect" parent="Screen/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1530550385]
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("3_2hopx")
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Screen/MarginContainer/VBoxContainer" unique_id=915136120]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+
+[node name="debt_kabel" type="Label" parent="Screen/MarginContainer/VBoxContainer/HBoxContainer2" unique_id=1748577751]
+custom_minimum_size = Vector2(150, 30)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+text = "Debt: even more"
+metadata/_edit_use_anchors_ = true
+
+[node name="Loan_gib" type="Button" parent="Screen/MarginContainer/VBoxContainer/HBoxContainer2" unique_id=1178283758]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+text = "give money"
+
+[node name="aaaaaaaaaaaaaaaaaa" type="Button" parent="Screen/MarginContainer/VBoxContainer" unique_id=1862054060]
+layout_mode = 2
+size_flags_vertical = 8
+text = " "
+alignment = 0
+
+[node name="Label" type="Label" parent="Screen/MarginContainer" unique_id=1330456038]
+layout_mode = 2
+size_flags_vertical = 8
+text = "Pay loan"

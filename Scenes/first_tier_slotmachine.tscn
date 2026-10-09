@@ -51,14 +51,8 @@ script = ExtResource("1_fad38")
 slots = Array[NodePath]([NodePath("../Slot1"), NodePath("../Slot2"), NodePath("../Slot3")])
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Arm" unique_id=1244028591]
-<<<<<<< Updated upstream:Scenes/slotmachine.tscn
-position = Vector2(20.000002, -2.000001)
-rotation = 0.3253765
-scale = Vector2(0.6918042, 0.8185523)
-=======
 position = Vector2(6.9999995, -150)
 scale = Vector2(24.224041, 1.8428035)
->>>>>>> Stashed changes:Scenes/first_tier_slotmachine.tscn
 shape = SubResource("RectangleShape2D_bhunq")
 
 [node name="Sprite2D" type="Sprite2D" parent="Arm/CollisionShape2D" unique_id=1664507609]
@@ -77,11 +71,8 @@ sprite_frames = SubResource("SpriteFrames_6s8ql")
 script = ExtResource("3_34cmk")
 
 [node name="Slot2" type="AnimatedSprite2D" parent="." unique_id=240168420]
-<<<<<<< Updated upstream:Scenes/slotmachine.tscn
-=======
 position = Vector2(-29, -202)
 sprite_frames = SubResource("SpriteFrames_utikg")
->>>>>>> Stashed changes:Scenes/first_tier_slotmachine.tscn
 script = ExtResource("3_34cmk")
 
 [node name="Slot3" type="AnimatedSprite2D" parent="." unique_id=1451337396]
@@ -90,8 +81,6 @@ scale = Vector2(0.06587837, 0.065878384)
 sprite_frames = SubResource("SpriteFrames_e436n")
 script = ExtResource("3_34cmk")
 
-<<<<<<< Updated upstream:Scenes/slotmachine.tscn
-=======
 [node name="BetChange" type="Button" parent="." unique_id=2070456783]
 offset_left = 23.0
 offset_top = -412.0
@@ -115,7 +104,6 @@ offset_right = 106.0
 offset_bottom = -423.0
 text = "bet range: work in progress"
 
->>>>>>> Stashed changes:Scenes/first_tier_slotmachine.tscn
 [connection signal="arm_pulled" from="Arm" to="Arm" method="_on_arm_pulled"]
 [connection signal="arm_pulled" from="Arm" to="Slot1" method="_on_arm_pulled"]
 [connection signal="arm_pulled" from="Arm" to="Slot2" method="_on_arm_pulled"]

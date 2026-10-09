@@ -2,10 +2,15 @@ extends Node
 
 var money = 10;
 var debt = 0
-@onready var money_label: Label = $"../money_label"
-@onready var debt_kabel: Label = $"../debt_kabel"
-@onready var loan_gib: Button = $"../loan_gib"
-@onready var aaaaaaaaaaaaaaaaa: Button = $"../aaaaaaaaaaaaaaaaa"
+#@onready var money_label: Label = $"../money_label"
+#@onready var debt_kabel: Label = $"../debt_kabel"
+#@onready var loan_gib: Button = $"../loan_gib"
+#@onready var aaaaaaaaaaaaaaaaa: Button = $"../aaaaaaaaaaaaaaaaa"
+
+@export var money_label: Label
+@export var debt_kabel: Label
+@export var loan_gib: Button
+@export var aaaaaaaaaaaaaaaaa: Button
 
 func _ready() -> void:
 	loan_gib.pressed.connect(_loan_gib)
