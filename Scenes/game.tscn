@@ -24,7 +24,8 @@ offset_left = 304.41312
 offset_top = -2.0
 offset_right = 497.41312
 offset_bottom = 29.0
-text = "Loan cause youre broke"
+text = "Loan
+"
 
 [node name="debt_kabel" type="Label" parent="." unique_id=1070934247]
 offset_left = 320.5897
