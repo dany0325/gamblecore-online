@@ -76,6 +76,13 @@ position = Vector2(22.000002, 12.000013)
 scale = Vector2(24.224041, 1.8428035)
 shape = SubResource("RectangleShape2D_bhunq")
 
+[node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D" unique_id=1664507609]
+position = Vector2(-0.9081887, -6.511841)
+rotation = -3.1415915
+scale = Vector2(0.048057828, -0.52537143)
+texture = ExtResource("2_eukpv")
+flip_h = true
+
 [node name="Slots" type="Node" parent="." unique_id=16759681]
 
 [node name="Slot1" type="AnimatedSprite2D" parent="Slots" unique_id=274849855]
@@ -106,37 +113,18 @@ scale = Vector2(0.036684785, 0.036684785)
 sprite_frames = SubResource("SpriteFrames_yf5fn")
 script = ExtResource("3_df1we")
 
-[node name="BetChange" type="Button" parent="." unique_id=2070456783]
-offset_left = -7.0
-offset_top = -445.0
-offset_right = 89.0
-offset_bottom = -414.0
-text = "Change bet"
-
-[node name="Label" type="Label" parent="BetChange" unique_id=229751203]
-layout_mode = 0
-offset_left = -87.0
-offset_top = -41.0
-offset_right = 83.0
-offset_bottom = -18.0
-text = "bet range: work in progress"
-
 [node name="SpinBox" type="SpinBox" parent="." unique_id=237794553]
-offset_left = -104.0
-offset_top = -445.0
-offset_right = -17.5
-offset_bottom = -414.0
+offset_left = -18.0
+offset_top = -282.0
+offset_right = 68.5
+offset_bottom = -251.0
 min_value = 10.0
 value = 10.0
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1664507609]
-position = Vector2(0, -3.0517578e-05)
-rotation = 3.1415927
-scale = Vector2(1.1641549, -0.9681564)
-texture = ExtResource("2_eukpv")
-flip_h = true
-
 [connection signal="arm_pulled" from="." to="." method="_on_arm_pulled"]
+[connection signal="arm_pulled" from="." to="Slots/Slot1" method="_on_arm_pulled"]
+[connection signal="arm_pulled" from="." to="Slots/Slot2" method="_on_arm_pulled"]
+[connection signal="arm_pulled" from="." to="Slots/Slot3" method="_on_arm_pulled"]
 [connection signal="arm_pulled" from="." to="Slots/Slot4" method="_on_arm_pulled"]
 [connection signal="arm_pulled" from="." to="Slots/Slot5" method="_on_arm_pulled"]
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]

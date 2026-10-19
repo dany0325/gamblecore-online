@@ -28,13 +28,13 @@ loan_gib = NodePath("../Screen/MarginContainer/VBoxContainer/HBoxContainer2/Loan
 aaaaaaaaaaaaaaaaa = NodePath("../Screen/MarginContainer/VBoxContainer/aaaaaaaaaaaaaaaaaa")
 
 [node name="FirstTierSlotmachine" parent="." unique_id=1201141508 instance=ExtResource("5_flokd")]
-position = Vector2(178, 550)
+position = Vector2(215, 404)
 
 [node name="SecondTierSlotmachine" parent="." unique_id=1224911217 instance=ExtResource("6_ji5vk")]
-position = Vector2(582, 562)
+position = Vector2(570, 392)
 
 [node name="SecondTierSlotmachine2" parent="." unique_id=244695862 instance=ExtResource("7_iwlc4")]
-position = Vector2(936, 523)
+position = Vector2(957, 420)
 
 [node name="Screen" type="MarginContainer" parent="." unique_id=2078702220]
 layout_mode = 1

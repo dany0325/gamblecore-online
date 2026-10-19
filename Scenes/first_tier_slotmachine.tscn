@@ -48,7 +48,7 @@ script = ExtResource("1_fad38")
 slots = Array[NodePath]([NodePath("Slots/Slot1"), NodePath("Slots/Slot2"), NodePath("Slots/Slot3")])
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1244028591]
-position = Vector2(-5.04871e-29, -4.500002)
+position = Vector2(-1.8e-43, -2.842171e-14)
 scale = Vector2(24.224041, 1.8428035)
 shape = SubResource("RectangleShape2D_bhunq")
 
@@ -75,13 +75,6 @@ scale = Vector2(0.06587837, 0.065878384)
 sprite_frames = SubResource("SpriteFrames_e436n")
 script = ExtResource("3_34cmk")
 
-[node name="BetChange" type="Button" parent="." unique_id=2070456783]
-offset_left = -9.0
-offset_top = -279.0
-offset_right = 87.0
-offset_bottom = -248.0
-text = "Change bet"
-
 [node name="SpinBox" type="SpinBox" parent="." unique_id=237794553]
 offset_left = -106.0
 offset_top = -279.0
@@ -103,3 +96,4 @@ text = "bet range: work in progress"
 [connection signal="arm_pulled" from="." to="Slots/Slot2" method="_on_arm_pulled"]
 [connection signal="arm_pulled" from="." to="Slots/Slot3" method="_on_arm_pulled"]
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="changed" from="SpinBox" to="." method="_on_spin_box_changed"]
