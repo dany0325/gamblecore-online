@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://bgjawahk1gtbx"]
+
+[ext_resource type="Script" uid="uid://bf6f38atyjqsy" path="res://Scenes/lore.gd" id="1_oqjcs"]
+[ext_resource type="PackedScene" uid="uid://itkgyjehh802" path="res://Scenes/everything.tscn" id="2_e7hpk"]
+
+[node name="Control" type="Control" unique_id=199157237]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_oqjcs")
+next_scene = ExtResource("2_e7hpk")
+
+[node name="Label" type="Label" parent="." unique_id=1385956806]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 276.0
+offset_top = 66.0
+offset_right = -447.0
+offset_bottom = -198.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 29
+text = "Egy Hajléktalan vagy aki most vesztette el a házát miután egy kicsit túl sok piát ivott és az asszony kirúgta otthonról. Eladva az összes holmid, összekapirgálsz elég pénz hogy visszamenjél oda, ahol oly sok dolgot elvesztettél: 
+A gamblecore kaszinóba...."
+autowrap_mode = 2
+
+[node name="Button" type="Button" parent="." unique_id=1457564317]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.38500002
+anchor_top = 0.809
+anchor_right = 0.53300005
+anchor_bottom = 0.90000004
+offset_left = -0.52001953
+offset_top = -0.23199463
+offset_right = -92.01605
+offset_bottom = -28.200012
+theme_override_font_sizes/font_size = 37
+text = "Folytatás"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

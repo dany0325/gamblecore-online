@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://e6dkmxhjhp84"
-path="res://.godot/imported/diamond.jpg-c9d5cb0286d2ac5b52da5cbabe584023.ctex"
+uid="uid://dubhwybxj5gab"
+path="res://.godot/imported/johny brav slot machine empty slots.png-a7e88af25bd963c51a175fc8d0b74c4c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://diamond.jpg"
-dest_files=["res://.godot/imported/diamond.jpg-c9d5cb0286d2ac5b52da5cbabe584023.ctex"]
+source_file="res://Assets/literal slot machine assets/johny brav slot machine empty slots.png"
+dest_files=["res://.godot/imported/johny brav slot machine empty slots.png-a7e88af25bd963c51a175fc8d0b74c4c.ctex"]
 
 [params]
 

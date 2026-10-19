@@ -109,10 +109,10 @@ volume_db = -10.0
 autoplay = true
 
 [node name="FirstTierSlotachine" parent="." unique_id=2043822558 instance=ExtResource("5_flokd")]
-position = Vector2(229, 384)
+position = Vector2(198, 400)
 
 [node name="SecondTierSlotmachine" parent="." unique_id=1017561956 instance=ExtResource("6_ji5vk")]
-position = Vector2(606, 368)
+position = Vector2(559, 385)
 
 [node name="ThirdTierSlotmachine" parent="." unique_id=572358733 instance=ExtResource("7_iwlc4")]
-position = Vector2(991, 425)
+position = Vector2(956, 419)

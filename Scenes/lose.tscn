@@ -12,6 +12,18 @@ grow_vertical = 2
 layout_mode = 0
 offset_left = 287.0
 offset_top = 223.0
-offset_right = 578.0
-offset_bottom = 246.0
-text = "You suck you got too much debt lmao"
+offset_right = 888.0
+offset_bottom = 455.0
+theme_override_font_sizes/font_size = 31
+text = "Amint az adósságod átlépte a 10000$-t, adóbehajtók törték rád a kaszinóban az ajtót és egy crackeltek téged egy 196-os pump headivel. 
+Még shielded se volt hogy túléljed..."
+autowrap_mode = 2
+
+[node name="Label2" type="Label" parent="." unique_id=275578038]
+layout_mode = 0
+offset_left = 318.0
+offset_top = 101.0
+offset_right = 418.0
+offset_bottom = 124.0
+theme_override_font_sizes/font_size = 57
+text = "BAD ENDING"

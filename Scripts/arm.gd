@@ -47,25 +47,38 @@ func _check_result(items: Array) -> void:
 	if items.is_empty():
 		return
 
-	var first_item = items[0]
+	var counted_items = {"cherry":0, "coin":0, "clover": 0, "lightning":0, "diamond":0, "six":0, "seven":0}
 	var streak := 1
+	var streak_item := "cherry"
+	
+	
+	for i in range(0, items.size()):
+		counted_items[items[i]] += 1
+		if counted_items[items[i]] > 1:
+			if counted_items[items[i]] == streak and item_multipliers[items[i]] > item_multipliers[streak_item]:
+				streak = counted_items[items[i]]
+				streak_item = items[i]
+			elif counted_items[items[i]] > streak:
+				streak = counted_items[items[i]]
+				streak_item = items[i]
+	#var first_item = items[0]
 
-	for i in range(1, items.size()):
-		if items[i] == first_item:
-			streak += 1
-		else:
-			break
+	#for i in range(1, items.size()):
+	#	if items[i] == first_item:
+	#		streak += 1
+	#	else:
+	#		break
 
 	
 			
 	if streak == items.size():
-		print("JACKPOT: all %d match! %s" % [items.size(), first_item])
-		player.add_money(item_multipliers.get(first_item) * streak_payout_ratios.get(streak) * operation_cost)
-		print(item_multipliers.get(first_item) * streak_payout_ratios.get(streak))
+		print("JACKPOT: all %d match! %s" % [items.size(), streak_item])
+		player.add_money(item_multipliers.get(streak_item) * streak_payout_ratios.get(streak) * operation_cost)
+		print(item_multipliers.get(streak_item) * streak_payout_ratios.get(streak))
 		
 	elif streak >= 2:
-		print("%d matched: %s" % [streak, first_item])
-		player.add_money(item_multipliers.get(first_item) * streak_payout_ratios.get(streak) * operation_cost)
+		print("%d matched: %s" % [streak, streak_item])
+		player.add_money(item_multipliers.get(streak_item) * streak_payout_ratios.get(streak) * operation_cost)
 	else:
 		print("No match")
 		
