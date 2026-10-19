@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://ckt42jk63gngf"]
 
+[ext_resource type="AudioStream" uid="uid://b8s7w835jh63k" path="res://Applause-Crowd-Cheering-SnapYT.App.mp3" id="1_j84t1"]
+
 [node name="Control" type="Control" unique_id=923033850]
 layout_mode = 3
 anchors_preset = 15
@@ -10,8 +12,22 @@ grow_vertical = 2
 
 [node name="Label" type="Label" parent="." unique_id=976663706]
 layout_mode = 0
-offset_left = 287.0
-offset_top = 223.0
-offset_right = 578.0
-offset_bottom = 246.0
-text = "You win w aura mango"
+offset_left = 229.0
+offset_top = 266.0
+offset_right = 858.0
+offset_bottom = 431.0
+theme_override_font_sizes/font_size = 28
+text = "Lehet hogy a nejed már csalt rajtad a templom egerével mert még az is gazdagabb volt mint te, de legalább már nem kell költeni lui vuttonos táskákra az asszonynak..."
+autowrap_mode = 2
+
+[node name="Label2" type="Label" parent="." unique_id=1402796190]
+layout_mode = 0
+offset_left = 367.0
+offset_top = 89.0
+offset_right = 843.0
+offset_bottom = 196.0
+theme_override_font_sizes/font_size = 48
+text = "Good ending"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1038288682]
+stream = ExtResource("1_j84t1")

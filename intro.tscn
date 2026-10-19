@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://b7emk51kibdei" path="res://intro.gd" id="1_7a8ye"]
 [ext_resource type="Texture2D" uid="uid://bmenbsjc5ebv7" path="res://Assets/gamblecore online title.png" id="1_ayt76"]
-[ext_resource type="PackedScene" uid="uid://itkgyjehh802" path="res://Scenes/everything.tscn" id="2_0a7ni"]
+[ext_resource type="PackedScene" uid="uid://bgjawahk1gtbx" path="res://Scenes/lore.tscn" id="2_7a8ye"]
 
 [node name="intro" type="Control" unique_id=717401118]
 layout_mode = 3
@@ -12,7 +12,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_7a8ye")
-next_scene = ExtResource("2_0a7ni")
+next_scene = ExtResource("2_7a8ye")
 
 [node name="Main Menu" type="MarginContainer" parent="." unique_id=829972332]
 layout_mode = 1
