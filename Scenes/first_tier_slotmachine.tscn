@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://50cul8uuey3j" path="res://Assets/slot machine assets/cherry.png" id="7_lhx10"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bhunq"]
-size = Vector2(14.283331, 233.3401)
+size = Vector2(14.283331, 238.22397)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_6s8ql"]
 animations = [{
@@ -47,15 +47,15 @@ animations = [{
 script = ExtResource("1_fad38")
 slots = Array[NodePath]([NodePath("Slots/Slot1"), NodePath("Slots/Slot2"), NodePath("Slots/Slot3")])
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1664507609]
-position = Vector2(0, -3.0517578e-05)
-scale = Vector2(0.7573829, 0.72953457)
-texture = ExtResource("2_0twtj")
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1244028591]
-position = Vector2(-2.999999, -7.000004)
+position = Vector2(-5.04871e-29, -4.500002)
 scale = Vector2(24.224041, 1.8428035)
 shape = SubResource("RectangleShape2D_bhunq")
+
+[node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D" unique_id=1664507609]
+position = Vector2(2.0841731e-30, 2.4419324)
+scale = Vector2(0.031265754, 0.39588293)
+texture = ExtResource("2_0twtj")
 
 [node name="Slots" type="Node" parent="." unique_id=1405135656]
 
