@@ -1,5 +1,19 @@
 # Godot 4+ specific ignores
 .godot/
+.godot/
+.godot/
+.godot/
+.godot/
+.godot/
+.godot/
+.godot/
+.godot/
+.godot/
+.godot/
+.godot/editor/editor_layout.cfg
+.godot/editor/script_editor_cache.cfg
+.godot/uid_cache.bin
+
 /android/
 .nomedia
 
