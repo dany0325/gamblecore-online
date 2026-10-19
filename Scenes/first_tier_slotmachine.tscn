@@ -45,7 +45,7 @@ animations = [{
 
 [node name="Arm" type="Area2D" unique_id=2043822558]
 script = ExtResource("1_fad38")
-slots = Array[NodePath]([NodePath("Slots/Slot1"), NodePath("Slots/Slot2"), NodePath("Slots/Slot3")])
+slots = Array[NodePath]([NodePath("Slot/Slot1"), NodePath("Slot/Slot2"), NodePath("Slot/Slot3")])
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1244028591]
 position = Vector2(-1.8e-43, -2.842171e-14)
@@ -56,24 +56,6 @@ shape = SubResource("RectangleShape2D_bhunq")
 position = Vector2(2.0841731e-30, 2.4419324)
 scale = Vector2(0.031265754, 0.39588293)
 texture = ExtResource("2_0twtj")
-
-[node name="Slots" type="Node" parent="." unique_id=1405135656]
-
-[node name="Slot1" type="AnimatedSprite2D" parent="Slots" unique_id=563896733]
-position = Vector2(-95, -199)
-sprite_frames = SubResource("SpriteFrames_6s8ql")
-script = ExtResource("3_34cmk")
-
-[node name="Slot2" type="AnimatedSprite2D" parent="Slots" unique_id=240168420]
-position = Vector2(-29, -202)
-sprite_frames = SubResource("SpriteFrames_utikg")
-script = ExtResource("3_34cmk")
-
-[node name="Slot3" type="AnimatedSprite2D" parent="Slots" unique_id=1451337396]
-position = Vector2(40, -202)
-scale = Vector2(0.06587837, 0.065878384)
-sprite_frames = SubResource("SpriteFrames_e436n")
-script = ExtResource("3_34cmk")
 
 [node name="SpinBox" type="SpinBox" parent="." unique_id=237794553]
 offset_left = -106.0
@@ -91,9 +73,27 @@ offset_right = 116.0
 offset_bottom = -290.0
 text = "bet range: work in progress"
 
+[node name="Slot" type="Node2D" parent="." unique_id=166138656]
+
+[node name="Slot1" type="AnimatedSprite2D" parent="Slot" unique_id=563896733]
+position = Vector2(-95, -199)
+sprite_frames = SubResource("SpriteFrames_6s8ql")
+script = ExtResource("3_34cmk")
+
+[node name="Slot2" type="AnimatedSprite2D" parent="Slot" unique_id=240168420]
+position = Vector2(-29, -202)
+sprite_frames = SubResource("SpriteFrames_utikg")
+script = ExtResource("3_34cmk")
+
+[node name="Slot3" type="AnimatedSprite2D" parent="Slot" unique_id=1451337396]
+position = Vector2(40, -202)
+scale = Vector2(0.06587837, 0.065878384)
+sprite_frames = SubResource("SpriteFrames_e436n")
+script = ExtResource("3_34cmk")
+
 [connection signal="arm_pulled" from="." to="." method="_on_arm_pulled"]
-[connection signal="arm_pulled" from="." to="Slots/Slot1" method="_on_arm_pulled"]
-[connection signal="arm_pulled" from="." to="Slots/Slot2" method="_on_arm_pulled"]
-[connection signal="arm_pulled" from="." to="Slots/Slot3" method="_on_arm_pulled"]
+[connection signal="arm_pulled" from="." to="Slot/Slot1" method="_on_arm_pulled"]
+[connection signal="arm_pulled" from="." to="Slot/Slot2" method="_on_arm_pulled"]
+[connection signal="arm_pulled" from="." to="Slot/Slot3" method="_on_arm_pulled"]
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
-[connection signal="changed" from="SpinBox" to="." method="_on_spin_box_changed"]
+[connection signal="value_changed" from="SpinBox" to="." method="_on_spin_box_value_changed"]

@@ -17,11 +17,12 @@ var streak_payout_ratios = {
 	7: 1000000.0 #300.0
 }
 
-func _on_spin_box_changed() -> void:
+func _on_spin_box_value_changed(value: float) -> void:
 	operation_cost = spin_box.value
 
 func _ready() -> void:
 	input_pickable = true  # on by default for Area2D, but explicit is nice
+	operation_cost = spin_box.value
 
 func _input_event(viewport: Viewport, event: InputEvent, shape_idx: int) -> void:
 	if event is InputEventMouseButton \
@@ -52,14 +53,19 @@ func _check_result(items: Array) -> void:
 			streak += 1
 		else:
 			break
-			
-	var total_payout = item_multipliers.get(first_item) * streak_payout_ratios.get(streak)
+
+	
 			
 	if streak == items.size():
 		print("JACKPOT: all %d match! %s" % [items.size(), first_item])
+		player.add_money(item_multipliers.get(first_item) * streak_payout_ratios.get(streak))
+		print(item_multipliers.get(first_item) * streak_payout_ratios.get(streak) * operation_cost)
+		
 	elif streak >= 2:
 		print("%d matched: %s" % [streak, first_item])
+		player.add_money(item_multipliers.get(first_item) * streak_payout_ratios.get(streak))
+		print(item_multipliers.get(first_item) * streak_payout_ratios.get(streak) * operation_cost)
 	else:
 		print("No match")
 		
-	player.add_money(total_payout)
+	

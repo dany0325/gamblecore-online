@@ -17,6 +17,7 @@ grow_vertical = 2
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=716279339]
 stream = ExtResource("4_flokd")
+volume_db = -10.0
 autoplay = true
 
 [node name="player" type="Node" parent="." unique_id=370587774 node_paths=PackedStringArray("money_label", "debt_kabel", "loan_gib", "aaaaaaaaaaaaaaaaa")]
@@ -28,13 +29,13 @@ loan_gib = NodePath("../Screen/MarginContainer/VBoxContainer/HBoxContainer2/Loan
 aaaaaaaaaaaaaaaaa = NodePath("../Screen/MarginContainer/VBoxContainer/aaaaaaaaaaaaaaaaaa")
 
 [node name="FirstTierSlotmachine" parent="." unique_id=1201141508 instance=ExtResource("5_flokd")]
-position = Vector2(215, 404)
+position = Vector2(209, 416)
 
 [node name="SecondTierSlotmachine" parent="." unique_id=1224911217 instance=ExtResource("6_ji5vk")]
 position = Vector2(570, 392)
 
 [node name="SecondTierSlotmachine2" parent="." unique_id=244695862 instance=ExtResource("7_iwlc4")]
-position = Vector2(957, 420)
+position = Vector2(966, 442)
 
 [node name="Screen" type="MarginContainer" parent="." unique_id=2078702220]
 layout_mode = 1

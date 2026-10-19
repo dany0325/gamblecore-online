@@ -57,7 +57,23 @@ position = Vector2(0.6121139, 11.428826)
 scale = Vector2(0.029047277, 0.2695169)
 texture = ExtResource("2_fka0p")
 
-[node name="Slots" type="Node" parent="." unique_id=348199420]
+[node name="SpinBox" type="SpinBox" parent="." unique_id=237794553]
+offset_left = -32.0
+offset_top = -271.0
+offset_right = 54.5
+offset_bottom = -240.0
+min_value = 100.0
+max_value = 5000.0
+value = 100.0
+
+[node name="Label" type="Label" parent="." unique_id=1746139229]
+offset_left = -93.0
+offset_top = -303.0
+offset_right = 119.0
+offset_bottom = -280.0
+text = "bet range: work in progress"
+
+[node name="Slots" type="Node2D" parent="." unique_id=2132682078]
 
 [node name="Slot1" type="AnimatedSprite2D" parent="Slots" unique_id=1954863213]
 position = Vector2(-127, -153)
@@ -94,22 +110,6 @@ script = ExtResource("3_m0y4f")
 position = Vector2(132, -147)
 sprite_frames = SubResource("SpriteFrames_7sxk2")
 script = ExtResource("3_m0y4f")
-
-[node name="SpinBox" type="SpinBox" parent="." unique_id=237794553]
-offset_left = -32.0
-offset_top = -271.0
-offset_right = 54.5
-offset_bottom = -240.0
-min_value = 100.0
-max_value = 5000.0
-value = 100.0
-
-[node name="Label" type="Label" parent="." unique_id=1746139229]
-offset_left = -93.0
-offset_top = -303.0
-offset_right = 119.0
-offset_bottom = -280.0
-text = "bet range: work in progress"
 
 [connection signal="arm_pulled" from="." to="." method="_on_arm_pulled"]
 [connection signal="arm_pulled" from="." to="Slots/Slot1" method="_on_arm_pulled"]
