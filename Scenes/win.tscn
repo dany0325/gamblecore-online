@@ -32,3 +32,4 @@ text = "Good ending"
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1038288682]
 stream = ExtResource("1_j84t1")
 autoplay = true
+parameters/looping = true
