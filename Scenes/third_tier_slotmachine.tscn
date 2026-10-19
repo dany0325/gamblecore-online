@@ -2,10 +2,14 @@
 
 [ext_resource type="Script" uid="uid://fytafa3cv6eb" path="res://Scripts/arm.gd" id="1_fka0p"]
 [ext_resource type="Texture2D" uid="uid://bimuomeys37e3" path="res://Assets/literal slot machine assets/captain clark gambling empire slot machine empty slots.png" id="2_jn1hj"]
+[ext_resource type="Texture2D" uid="uid://50cul8uuey3j" path="res://Assets/slot machine assets/cherry.png" id="3_eb0xy"]
 [ext_resource type="Script" uid="uid://cilcr6i0vjw2b" path="res://Scripts/slot.gd" id="3_m0y4f"]
 [ext_resource type="Texture2D" uid="uid://dm3dbihbu0s0k" path="res://Assets/slot machine assets/6 art asset.png" id="4_v6u47"]
+[ext_resource type="Texture2D" uid="uid://sqvtrowvmxhp" path="res://Assets/slot machine assets/scam.png" id="5_x1d05"]
 [ext_resource type="Texture2D" uid="uid://ixrpiqatar68" path="res://Assets/slot machine assets/7 art asset.png" id="6_dpuf6"]
+[ext_resource type="Texture2D" uid="uid://crvticlxakqp4" path="res://Assets/slot machine assets/diamond.png" id="7_7sxk2"]
 [ext_resource type="Texture2D" uid="uid://cskfg6ei2xegk" path="res://Assets/slot machine assets/clover.png" id="7_eb0xy"]
+[ext_resource type="Texture2D" uid="uid://ca8go76208j1w" path="res://Assets/slot machine assets/lightning.png" id="8_d0kqr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bhunq"]
 size = Vector2(13.224228, 221.33548)
@@ -14,10 +18,66 @@ size = Vector2(13.224228, 221.33548)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("3_eb0xy")
+}],
+"loop": 1,
+"name": &"cherry",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_eb0xy")
+}],
+"loop": 1,
+"name": &"clover",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_x1d05")
+}],
+"loop": 1,
+"name": &"coin",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("4_v6u47")
 }],
 "loop": 1,
 "name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_7sxk2")
+}],
+"loop": 1,
+"name": &"diamond",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_d0kqr")
+}],
+"loop": 1,
+"name": &"lightning",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_dpuf6")
+}],
+"loop": 1,
+"name": &"seven",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_v6u47")
+}],
+"loop": 1,
+"name": &"six",
 "speed": 5.0
 }]
 
@@ -25,10 +85,66 @@ animations = [{
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("3_eb0xy")
+}],
+"loop": 1,
+"name": &"cherry",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_eb0xy")
+}],
+"loop": 1,
+"name": &"clover",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_x1d05")
+}],
+"loop": 1,
+"name": &"coin",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("6_dpuf6")
 }],
 "loop": 1,
 "name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_7sxk2")
+}],
+"loop": 1,
+"name": &"diamond",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_d0kqr")
+}],
+"loop": 1,
+"name": &"lightning",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_dpuf6")
+}],
+"loop": 1,
+"name": &"seven",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_v6u47")
+}],
+"loop": 1,
+"name": &"six",
 "speed": 5.0
 }]
 
@@ -36,10 +152,66 @@ animations = [{
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("3_eb0xy")
+}],
+"loop": 1,
+"name": &"cherry",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_eb0xy")
+}],
+"loop": 1,
+"name": &"clover",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_x1d05")
+}],
+"loop": 1,
+"name": &"coin",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("7_eb0xy")
 }],
 "loop": 1,
 "name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_7sxk2")
+}],
+"loop": 1,
+"name": &"diamond",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_d0kqr")
+}],
+"loop": 1,
+"name": &"lightning",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_dpuf6")
+}],
+"loop": 1,
+"name": &"seven",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_v6u47")
+}],
+"loop": 1,
+"name": &"six",
 "speed": 5.0
 }]
 
@@ -76,39 +248,46 @@ text = "bet range: work in progress"
 [node name="Slots" type="Node2D" parent="." unique_id=2132682078]
 
 [node name="Slot1" type="AnimatedSprite2D" parent="Slots" unique_id=1954863213]
-position = Vector2(-141, -49)
+position = Vector2(-141, -47)
 sprite_frames = SubResource("SpriteFrames_x1d05")
+animation = &"six"
 script = ExtResource("3_m0y4f")
 
 [node name="Slot2" type="AnimatedSprite2D" parent="Slots" unique_id=489096565]
-position = Vector2(-96, -48)
+position = Vector2(-96, -47)
 sprite_frames = SubResource("SpriteFrames_7sxk2")
+animation = &"seven"
 script = ExtResource("3_m0y4f")
 
 [node name="Slot3" type="AnimatedSprite2D" parent="Slots" unique_id=706933621]
-position = Vector2(-52, -46)
+position = Vector2(-52, -47)
 sprite_frames = SubResource("SpriteFrames_x1d05")
+animation = &"six"
 script = ExtResource("3_m0y4f")
 
 [node name="Slot4" type="AnimatedSprite2D" parent="Slots" unique_id=972060815]
 position = Vector2(-6.9999995, -47.000023)
 scale = Vector2(0.036175266, 0.036175266)
 sprite_frames = SubResource("SpriteFrames_lonno")
+animation = &"clover"
 script = ExtResource("3_m0y4f")
 
 [node name="Slot5" type="AnimatedSprite2D" parent="Slots" unique_id=92868747]
-position = Vector2(32, -44)
+position = Vector2(30, -47)
 sprite_frames = SubResource("SpriteFrames_7sxk2")
+animation = &"seven"
 script = ExtResource("3_m0y4f")
 
 [node name="Slot6" type="AnimatedSprite2D" parent="Slots" unique_id=776359330]
-position = Vector2(76, -45)
+position = Vector2(76, -47)
 sprite_frames = SubResource("SpriteFrames_x1d05")
+animation = &"six"
 script = ExtResource("3_m0y4f")
 
 [node name="Slot7" type="AnimatedSprite2D" parent="Slots" unique_id=2091632080]
-position = Vector2(118, -43)
+position = Vector2(117, -47)
 sprite_frames = SubResource("SpriteFrames_7sxk2")
+animation = &"seven"
 script = ExtResource("3_m0y4f")
 
 [connection signal="arm_pulled" from="." to="." method="_on_arm_pulled"]

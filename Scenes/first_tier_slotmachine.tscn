@@ -3,8 +3,12 @@
 [ext_resource type="Script" uid="uid://fytafa3cv6eb" path="res://Scripts/arm.gd" id="1_fad38"]
 [ext_resource type="Texture2D" uid="uid://dubhwybxj5gab" path="res://Assets/literal slot machine assets/johny brav slot machine empty slots.png" id="2_6s8ql"]
 [ext_resource type="Script" uid="uid://cilcr6i0vjw2b" path="res://Scripts/slot.gd" id="3_34cmk"]
+[ext_resource type="Texture2D" uid="uid://cskfg6ei2xegk" path="res://Assets/slot machine assets/clover.png" id="4_2cwdd"]
 [ext_resource type="Texture2D" uid="uid://dm3dbihbu0s0k" path="res://Assets/slot machine assets/6 art asset.png" id="4_utikg"]
+[ext_resource type="Texture2D" uid="uid://sqvtrowvmxhp" path="res://Assets/slot machine assets/scam.png" id="5_78c1t"]
 [ext_resource type="Texture2D" uid="uid://ixrpiqatar68" path="res://Assets/slot machine assets/7 art asset.png" id="6_e436n"]
+[ext_resource type="Texture2D" uid="uid://crvticlxakqp4" path="res://Assets/slot machine assets/diamond.png" id="6_r1ai4"]
+[ext_resource type="Texture2D" uid="uid://ca8go76208j1w" path="res://Assets/slot machine assets/lightning.png" id="7_gdc2i"]
 [ext_resource type="Texture2D" uid="uid://50cul8uuey3j" path="res://Assets/slot machine assets/cherry.png" id="7_lhx10"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bhunq"]
@@ -12,6 +16,54 @@ size = Vector2(14.283331, 238.22397)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_6s8ql"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_lhx10")
+}],
+"loop": 1,
+"name": &"cherry",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_2cwdd")
+}],
+"loop": 1,
+"name": &"clover",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_78c1t")
+}],
+"loop": 1,
+"name": &"coin",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_r1ai4")
+}],
+"loop": 1,
+"name": &"diamond",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_gdc2i")
+}],
+"loop": 1,
+"name": &"lightning",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_e436n")
+}],
+"loop": 1,
+"name": &"seven",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("4_utikg")
@@ -25,10 +77,58 @@ animations = [{
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("7_lhx10")
+}],
+"loop": 1,
+"name": &"cherry",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_2cwdd")
+}],
+"loop": 1,
+"name": &"clover",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_78c1t")
+}],
+"loop": 1,
+"name": &"coin",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_r1ai4")
+}],
+"loop": 1,
+"name": &"diamond",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_gdc2i")
+}],
+"loop": 1,
+"name": &"lightning",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("6_e436n")
 }],
 "loop": 1,
 "name": &"seven",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_utikg")
+}],
+"loop": 1,
+"name": &"six",
 "speed": 5.0
 }]
 
@@ -40,6 +140,54 @@ animations = [{
 }],
 "loop": 1,
 "name": &"cherry",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_2cwdd")
+}],
+"loop": 1,
+"name": &"clover",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_78c1t")
+}],
+"loop": 1,
+"name": &"coin",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_r1ai4")
+}],
+"loop": 1,
+"name": &"diamond",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_gdc2i")
+}],
+"loop": 1,
+"name": &"lightning",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_e436n")
+}],
+"loop": 1,
+"name": &"seven",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_utikg")
+}],
+"loop": 1,
+"name": &"six",
 "speed": 5.0
 }]
 
@@ -89,7 +237,7 @@ script = ExtResource("3_34cmk")
 
 [node name="Slot3" type="AnimatedSprite2D" parent="Slot" unique_id=1451337396]
 position = Vector2(19, -62.5)
-scale = Vector2(0.06587837, 0.065878384)
+scale = Vector2(0.05, 0.05)
 sprite_frames = SubResource("SpriteFrames_e436n")
 animation = &"cherry"
 script = ExtResource("3_34cmk")
