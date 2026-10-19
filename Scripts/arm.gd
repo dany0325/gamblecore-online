@@ -18,7 +18,16 @@ var streak_payout_ratios = {
 }
 #var items = ["cherry", "coin", "clover", "lightning", "diamond", "six", "seven"]
 
-func _on_mouse_entered() -> void:
+func _ready() -> void:
+	input_pickable = true  # on by default for Area2D, but explicit is nice
+
+func _input_event(viewport: Viewport, event: InputEvent, shape_idx: int) -> void:
+	if event is InputEventMouseButton \
+			and event.button_index == MOUSE_BUTTON_LEFT \
+			and event.pressed:
+		_pull_arm()
+
+func _pull_arm() -> void:
 	arm_pulled.emit()
 	results.clear()
 

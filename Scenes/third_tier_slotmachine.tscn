@@ -51,12 +51,12 @@ script = ExtResource("1_fka0p")
 slots = Array[NodePath]([NodePath("../Slot1"), NodePath("../Slot2"), NodePath("../Slot3"), NodePath("../Slot4"), NodePath("../Slot5"), NodePath("../Slot6"), NodePath("../Slot7")])
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Arm" unique_id=1244028591]
-position = Vector2(3.8146973e-06, -133.12213)
+position = Vector2(2.2737368e-13, -1.5258789e-05)
 scale = Vector2(24.224041, 1.8428035)
 shape = SubResource("RectangleShape2D_bhunq")
 
 [node name="Sprite2D" type="Sprite2D" parent="Arm/CollisionShape2D" unique_id=1664507609]
-position = Vector2(0.9081884, 3.8648372)
+position = Vector2(0.08256261, -5.9691544)
 scale = Vector2(0.029047277, 0.2695169)
 texture = ExtResource("2_fka0p")
 

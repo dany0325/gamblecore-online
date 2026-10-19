@@ -2,14 +2,13 @@
 
 [ext_resource type="Script" uid="uid://fytafa3cv6eb" path="res://Scripts/arm.gd" id="1_fad38"]
 [ext_resource type="Texture2D" uid="uid://dnpag1x1o04k1" path="res://Assets/literal slot machine assets/johny brav slot machine.png" id="2_0twtj"]
-[ext_resource type="Texture2D" uid="uid://b2676817o4xd" path="res://Assets/Pixel Fantasy Slot Machine/Slot Machine/slot-machine5.png" id="3_6wnp6"]
 [ext_resource type="Script" uid="uid://cilcr6i0vjw2b" path="res://Scripts/slot.gd" id="3_34cmk"]
 [ext_resource type="Texture2D" uid="uid://dm3dbihbu0s0k" path="res://Assets/slot machine assets/6 art asset.png" id="4_utikg"]
 [ext_resource type="Texture2D" uid="uid://ixrpiqatar68" path="res://Assets/slot machine assets/7 art asset.png" id="6_e436n"]
 [ext_resource type="Texture2D" uid="uid://50cul8uuey3j" path="res://Assets/slot machine assets/cherry.png" id="7_lhx10"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bhunq"]
-size = Vector2(12, 186.53952)
+size = Vector2(14.283331, 233.3401)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_6s8ql"]
 animations = [{
@@ -44,68 +43,63 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Slotmachine" type="Node2D" unique_id=1201141508]
-
-[node name="Arm" type="Area2D" parent="." unique_id=2043822558]
+[node name="Arm" type="Area2D" unique_id=2043822558]
 script = ExtResource("1_fad38")
-slots = Array[NodePath]([NodePath("../Slot1"), NodePath("../Slot2"), NodePath("../Slot3")])
+slots = Array[NodePath]([NodePath("Slots/Slot1"), NodePath("Slots/Slot2"), NodePath("Slots/Slot3")])
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Arm" unique_id=1244028591]
-position = Vector2(6.9999995, -150)
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1664507609]
+position = Vector2(0, -3.0517578e-05)
+scale = Vector2(0.7573829, 0.72953457)
+texture = ExtResource("2_0twtj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1244028591]
+position = Vector2(-2.999999, -7.000004)
 scale = Vector2(24.224041, 1.8428035)
 shape = SubResource("RectangleShape2D_bhunq")
 
-[node name="Sprite2D" type="Sprite2D" parent="Arm/CollisionShape2D" unique_id=1664507609]
-position = Vector2(0.41281283, 5.3602304)
-scale = Vector2(0.031265754, 0.395883)
-texture = ExtResource("2_0twtj")
+[node name="Slots" type="Node" parent="." unique_id=1405135656]
 
-[node name="SlotMachine5" type="Sprite2D" parent="Arm" unique_id=304962437]
-position = Vector2(-32, -224)
-scale = Vector2(0.5355392, 0.43429488)
-texture = ExtResource("3_6wnp6")
-
-[node name="Slot1" type="AnimatedSprite2D" parent="." unique_id=563896733]
-position = Vector2(-99, -200)
+[node name="Slot1" type="AnimatedSprite2D" parent="Slots" unique_id=563896733]
+position = Vector2(-95, -199)
 sprite_frames = SubResource("SpriteFrames_6s8ql")
 script = ExtResource("3_34cmk")
 
-[node name="Slot2" type="AnimatedSprite2D" parent="." unique_id=240168420]
+[node name="Slot2" type="AnimatedSprite2D" parent="Slots" unique_id=240168420]
 position = Vector2(-29, -202)
 sprite_frames = SubResource("SpriteFrames_utikg")
 script = ExtResource("3_34cmk")
 
-[node name="Slot3" type="AnimatedSprite2D" parent="." unique_id=1451337396]
+[node name="Slot3" type="AnimatedSprite2D" parent="Slots" unique_id=1451337396]
 position = Vector2(40, -202)
 scale = Vector2(0.06587837, 0.065878384)
 sprite_frames = SubResource("SpriteFrames_e436n")
 script = ExtResource("3_34cmk")
 
 [node name="BetChange" type="Button" parent="." unique_id=2070456783]
-offset_left = 23.0
-offset_top = -412.0
-offset_right = 119.0
-offset_bottom = -381.0
+offset_left = -9.0
+offset_top = -279.0
+offset_right = 87.0
+offset_bottom = -248.0
 text = "Change bet"
 
 [node name="SpinBox" type="SpinBox" parent="." unique_id=237794553]
-offset_left = -74.0
-offset_top = -412.0
-offset_right = 12.5
-offset_bottom = -381.0
+offset_left = -106.0
+offset_top = -279.0
+offset_right = -19.5
+offset_bottom = -248.0
 min_value = 1.0
 max_value = 10.0
 value = 1.0
 
 [node name="Label" type="Label" parent="." unique_id=2107050340]
-offset_left = -64.0
-offset_top = -446.0
-offset_right = 106.0
-offset_bottom = -423.0
+offset_left = -96.0
+offset_top = -313.0
+offset_right = 116.0
+offset_bottom = -290.0
 text = "bet range: work in progress"
 
-[connection signal="arm_pulled" from="Arm" to="Arm" method="_on_arm_pulled"]
-[connection signal="arm_pulled" from="Arm" to="Slot1" method="_on_arm_pulled"]
-[connection signal="arm_pulled" from="Arm" to="Slot2" method="_on_arm_pulled"]
-[connection signal="arm_pulled" from="Arm" to="Slot3" method="_on_arm_pulled"]
-[connection signal="mouse_entered" from="Arm" to="Arm" method="_on_mouse_entered"]
+[connection signal="arm_pulled" from="." to="." method="_on_arm_pulled"]
+[connection signal="arm_pulled" from="." to="Slots/Slot1" method="_on_arm_pulled"]
+[connection signal="arm_pulled" from="." to="Slots/Slot2" method="_on_arm_pulled"]
+[connection signal="arm_pulled" from="." to="Slots/Slot3" method="_on_arm_pulled"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]

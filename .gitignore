@@ -23,3 +23,7 @@ export_credentials.cfg
 .mono/
 data_*/
 mono_crash.*.json
+.godot/editor/editor_layout.cfg
+.godot/editor/filesystem_cache10
+.godot/editor/script_editor_cache.cfg
+.godot/uid_cache.bin
