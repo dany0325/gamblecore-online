@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bvrxhvj2s4ya6"]
 
 [ext_resource type="Script" uid="uid://fytafa3cv6eb" path="res://Scripts/arm.gd" id="1_fad38"]
-[ext_resource type="Texture2D" uid="uid://dnpag1x1o04k1" path="res://Assets/literal slot machine assets/johny brav slot machine.png" id="2_0twtj"]
+[ext_resource type="Texture2D" uid="uid://dubhwybxj5gab" path="res://Assets/literal slot machine assets/johny brav slot machine empty slots.png" id="2_6s8ql"]
 [ext_resource type="Script" uid="uid://cilcr6i0vjw2b" path="res://Scripts/slot.gd" id="3_34cmk"]
 [ext_resource type="Texture2D" uid="uid://dm3dbihbu0s0k" path="res://Assets/slot machine assets/6 art asset.png" id="4_utikg"]
 [ext_resource type="Texture2D" uid="uid://ixrpiqatar68" path="res://Assets/slot machine assets/7 art asset.png" id="6_e436n"]
@@ -17,7 +17,7 @@ animations = [{
 "texture": ExtResource("4_utikg")
 }],
 "loop": 1,
-"name": &"default",
+"name": &"six",
 "speed": 5.0
 }]
 
@@ -28,7 +28,7 @@ animations = [{
 "texture": ExtResource("6_e436n")
 }],
 "loop": 1,
-"name": &"default",
+"name": &"seven",
 "speed": 5.0
 }]
 
@@ -39,7 +39,7 @@ animations = [{
 "texture": ExtResource("7_lhx10")
 }],
 "loop": 1,
-"name": &"default",
+"name": &"cherry",
 "speed": 5.0
 }]
 
@@ -55,7 +55,7 @@ shape = SubResource("RectangleShape2D_bhunq")
 [node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D" unique_id=1664507609]
 position = Vector2(2.0841731e-30, 2.4419324)
 scale = Vector2(0.031265754, 0.39588293)
-texture = ExtResource("2_0twtj")
+texture = ExtResource("2_6s8ql")
 
 [node name="SpinBox" type="SpinBox" parent="." unique_id=237794553]
 offset_left = -106.0
@@ -76,19 +76,22 @@ text = "bet range: work in progress"
 [node name="Slot" type="Node2D" parent="." unique_id=166138656]
 
 [node name="Slot1" type="AnimatedSprite2D" parent="Slot" unique_id=563896733]
-position = Vector2(-95, -199)
+position = Vector2(-116, -59.5)
 sprite_frames = SubResource("SpriteFrames_6s8ql")
+animation = &"six"
 script = ExtResource("3_34cmk")
 
 [node name="Slot2" type="AnimatedSprite2D" parent="Slot" unique_id=240168420]
-position = Vector2(-29, -202)
+position = Vector2(-50, -62.5)
 sprite_frames = SubResource("SpriteFrames_utikg")
+animation = &"seven"
 script = ExtResource("3_34cmk")
 
 [node name="Slot3" type="AnimatedSprite2D" parent="Slot" unique_id=1451337396]
-position = Vector2(40, -202)
+position = Vector2(19, -62.5)
 scale = Vector2(0.06587837, 0.065878384)
 sprite_frames = SubResource("SpriteFrames_e436n")
+animation = &"cherry"
 script = ExtResource("3_34cmk")
 
 [connection signal="arm_pulled" from="." to="." method="_on_arm_pulled"]

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://drt4uitqtw7k"]
 
 [ext_resource type="Script" uid="uid://fytafa3cv6eb" path="res://Scripts/arm.gd" id="1_fka0p"]
-[ext_resource type="Texture2D" uid="uid://bqonesy8id1f1" path="res://Assets/literal slot machine assets/captain clark gambling empire slot machine.png" id="2_fka0p"]
+[ext_resource type="Texture2D" uid="uid://bimuomeys37e3" path="res://Assets/literal slot machine assets/captain clark gambling empire slot machine empty slots.png" id="2_jn1hj"]
 [ext_resource type="Script" uid="uid://cilcr6i0vjw2b" path="res://Scripts/slot.gd" id="3_m0y4f"]
 [ext_resource type="Texture2D" uid="uid://dm3dbihbu0s0k" path="res://Assets/slot machine assets/6 art asset.png" id="4_v6u47"]
 [ext_resource type="Texture2D" uid="uid://ixrpiqatar68" path="res://Assets/slot machine assets/7 art asset.png" id="6_dpuf6"]
@@ -55,7 +55,7 @@ shape = SubResource("RectangleShape2D_bhunq")
 [node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D" unique_id=1664507609]
 position = Vector2(0.6121139, 11.428826)
 scale = Vector2(0.029047277, 0.2695169)
-texture = ExtResource("2_fka0p")
+texture = ExtResource("2_jn1hj")
 
 [node name="SpinBox" type="SpinBox" parent="." unique_id=237794553]
 offset_left = -32.0
@@ -76,38 +76,38 @@ text = "bet range: work in progress"
 [node name="Slots" type="Node2D" parent="." unique_id=2132682078]
 
 [node name="Slot1" type="AnimatedSprite2D" parent="Slots" unique_id=1954863213]
-position = Vector2(-127, -153)
+position = Vector2(-141, -49)
 sprite_frames = SubResource("SpriteFrames_x1d05")
 script = ExtResource("3_m0y4f")
 
 [node name="Slot2" type="AnimatedSprite2D" parent="Slots" unique_id=489096565]
-position = Vector2(-82, -152)
+position = Vector2(-96, -48)
 sprite_frames = SubResource("SpriteFrames_7sxk2")
 script = ExtResource("3_m0y4f")
 
 [node name="Slot3" type="AnimatedSprite2D" parent="Slots" unique_id=706933621]
-position = Vector2(-38, -150)
+position = Vector2(-52, -46)
 sprite_frames = SubResource("SpriteFrames_x1d05")
 script = ExtResource("3_m0y4f")
 
 [node name="Slot4" type="AnimatedSprite2D" parent="Slots" unique_id=972060815]
-position = Vector2(6.9999995, -151.00002)
+position = Vector2(-6.9999995, -47.000023)
 scale = Vector2(0.036175266, 0.036175266)
 sprite_frames = SubResource("SpriteFrames_lonno")
 script = ExtResource("3_m0y4f")
 
 [node name="Slot5" type="AnimatedSprite2D" parent="Slots" unique_id=92868747]
-position = Vector2(46, -148)
+position = Vector2(32, -44)
 sprite_frames = SubResource("SpriteFrames_7sxk2")
 script = ExtResource("3_m0y4f")
 
 [node name="Slot6" type="AnimatedSprite2D" parent="Slots" unique_id=776359330]
-position = Vector2(90, -149)
+position = Vector2(76, -45)
 sprite_frames = SubResource("SpriteFrames_x1d05")
 script = ExtResource("3_m0y4f")
 
 [node name="Slot7" type="AnimatedSprite2D" parent="Slots" unique_id=2091632080]
-position = Vector2(132, -147)
+position = Vector2(118, -43)
 sprite_frames = SubResource("SpriteFrames_7sxk2")
 script = ExtResource("3_m0y4f")
 
