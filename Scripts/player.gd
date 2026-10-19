@@ -11,15 +11,21 @@ var debt = 0
 @export var debt_kabel: Label
 @export var loan_gib: Button
 @export var aaaaaaaaaaaaaaaaa: Button
+@export var win_scene : PackedScene
+@export var lose_scene : PackedScene
 
 func _ready() -> void:
 	loan_gib.pressed.connect(_loan_gib)
 	aaaaaaaaaaaaaaaaa.pressed.connect(_loan_payoff)
-	
 
 func _process(_delta: float) -> void:
 	money_label.text = "Money: " + str(money)
 	debt_kabel.text = "Debt: " + str(debt)
+	
+	if money > 100000:
+		get_tree().change_scene_to_packed(win_scene)
+	elif debt < -10000:
+		get_tree().change_scene_to_packed(lose_scene)
 
 func add_money(money_gained):
 	money += money_gained

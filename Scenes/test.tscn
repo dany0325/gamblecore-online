@@ -1,0 +1,102 @@
+[gd_scene format=3 uid="uid://ddu0ythmvltyr"]
+
+[ext_resource type="PackedScene" uid="uid://bvrxhvj2s4ya6" path="res://Scenes/first_tier_slotmachine.tscn" id="1_8od7v"]
+[ext_resource type="Script" uid="uid://c81kcsmhgtk1o" path="res://Scripts/player.gd" id="2_qc4db"]
+[ext_resource type="Texture2D" uid="uid://sqvtrowvmxhp" path="res://Assets/slot machine assets/scam.png" id="3_qc4db"]
+[ext_resource type="PackedScene" uid="uid://cn2nplratuhsk" path="res://Scenes/second_tier_slotmachine.tscn" id="4_ys1qc"]
+[ext_resource type="PackedScene" uid="uid://drt4uitqtw7k" path="res://Scenes/third_tier_slotmachine.tscn" id="5_35xla"]
+
+[node name="Test" type="Node2D" unique_id=843276641]
+
+[node name="player" type="Node" parent="." unique_id=181631494 node_paths=PackedStringArray("money_label", "debt_kabel", "loan_gib", "aaaaaaaaaaaaaaaaa")]
+unique_name_in_owner = true
+script = ExtResource("2_qc4db")
+money_label = NodePath("../Screen/MarginContainer/VBoxContainer/HBoxContainer/money_label")
+debt_kabel = NodePath("../Screen/MarginContainer/VBoxContainer/HBoxContainer2/debt_kabel")
+loan_gib = NodePath("../Screen/MarginContainer/VBoxContainer/HBoxContainer2/Loan_gib")
+aaaaaaaaaaaaaaaaa = NodePath("../Screen/MarginContainer/VBoxContainer/aaaaaaaaaaaaaaaaaa")
+
+[node name="Screen" type="MarginContainer" parent="." unique_id=1268051281]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 189.0
+offset_top = -363.0
+offset_right = 469.0
+offset_bottom = -257.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_top = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="Screen" unique_id=61890347]
+custom_minimum_size = Vector2(280, 100)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Screen/MarginContainer" unique_id=1068905374]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+theme_override_constants/separation = 7
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Screen/MarginContainer/VBoxContainer" unique_id=1135401700]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+
+[node name="money_label" type="Label" parent="Screen/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1757842149]
+custom_minimum_size = Vector2(150, 30)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+text = "Money: 10 gazillion"
+metadata/_edit_use_anchors_ = true
+
+[node name="coin node" type="NinePatchRect" parent="Screen/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1890869210]
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("3_qc4db")
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Screen/MarginContainer/VBoxContainer" unique_id=1989030557]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+
+[node name="debt_kabel" type="Label" parent="Screen/MarginContainer/VBoxContainer/HBoxContainer2" unique_id=1787707325]
+custom_minimum_size = Vector2(150, 30)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+text = "Debt: even more"
+metadata/_edit_use_anchors_ = true
+
+[node name="Loan_gib" type="Button" parent="Screen/MarginContainer/VBoxContainer/HBoxContainer2" unique_id=2019302721]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+text = "give money"
+
+[node name="aaaaaaaaaaaaaaaaaa" type="Button" parent="Screen/MarginContainer/VBoxContainer" unique_id=752731188]
+layout_mode = 2
+size_flags_vertical = 8
+text = " "
+alignment = 0
+
+[node name="Label" type="Label" parent="Screen/MarginContainer" unique_id=764627979]
+layout_mode = 2
+size_flags_vertical = 8
+text = "Pay loan"
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=657615380]
+position = Vector2(58, -90)
+
+[node name="Arm" parent="." unique_id=2043822558 instance=ExtResource("1_8od7v")]
+position = Vector2(-304, -11)
+
+[node name="SecondTierSlotmachine" parent="." unique_id=1425599495 instance=ExtResource("4_ys1qc")]
+position = Vector2(44, -23)
+
+[node name="ThirdTierSlotmachine" parent="." unique_id=1484513606 instance=ExtResource("5_35xla")]
+position = Vector2(449, 17)
