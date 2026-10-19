@@ -14,11 +14,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=716279339]
-stream = ExtResource("4_flokd")
-volume_db = -10.0
-autoplay = true
+mouse_filter = 2
 
 [node name="player" type="Node" parent="." unique_id=370587774 node_paths=PackedStringArray("money_label", "debt_kabel", "loan_gib", "aaaaaaaaaaaaaaaaa")]
 unique_name_in_owner = true
@@ -28,15 +24,6 @@ debt_kabel = NodePath("../Screen/MarginContainer/VBoxContainer/HBoxContainer2/de
 loan_gib = NodePath("../Screen/MarginContainer/VBoxContainer/HBoxContainer2/Loan_gib")
 aaaaaaaaaaaaaaaaa = NodePath("../Screen/MarginContainer/VBoxContainer/aaaaaaaaaaaaaaaaaa")
 
-[node name="FirstTierSlotmachine" parent="." unique_id=1201141508 instance=ExtResource("5_flokd")]
-position = Vector2(209, 416)
-
-[node name="SecondTierSlotmachine" parent="." unique_id=1224911217 instance=ExtResource("6_ji5vk")]
-position = Vector2(570, 392)
-
-[node name="SecondTierSlotmachine2" parent="." unique_id=244695862 instance=ExtResource("7_iwlc4")]
-position = Vector2(966, 442)
-
 [node name="Screen" type="MarginContainer" parent="." unique_id=2078702220]
 layout_mode = 1
 anchors_preset = 15
@@ -44,6 +31,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 theme_override_constants/margin_top = 0
 
 [node name="MarginContainer" type="MarginContainer" parent="Screen" unique_id=2040293861]
@@ -51,17 +39,20 @@ custom_minimum_size = Vector2(280, 100)
 layout_mode = 2
 size_flags_horizontal = 8
 size_flags_vertical = 0
+mouse_filter = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Screen/MarginContainer" unique_id=1173261223]
 layout_mode = 2
 size_flags_horizontal = 8
 size_flags_vertical = 0
+mouse_filter = 2
 theme_override_constants/separation = 7
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Screen/MarginContainer/VBoxContainer" unique_id=1566421972]
 layout_mode = 2
 size_flags_horizontal = 8
 size_flags_vertical = 0
+mouse_filter = 2
 
 [node name="money_label" type="Label" parent="Screen/MarginContainer/VBoxContainer/HBoxContainer" unique_id=193147454]
 custom_minimum_size = Vector2(150, 30)
@@ -82,6 +73,7 @@ texture = ExtResource("3_2hopx")
 layout_mode = 2
 size_flags_horizontal = 8
 size_flags_vertical = 0
+mouse_filter = 2
 
 [node name="debt_kabel" type="Label" parent="Screen/MarginContainer/VBoxContainer/HBoxContainer2" unique_id=1748577751]
 custom_minimum_size = Vector2(150, 30)
@@ -106,3 +98,17 @@ alignment = 0
 layout_mode = 2
 size_flags_vertical = 8
 text = "Pay loan"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=716279339]
+stream = ExtResource("4_flokd")
+volume_db = -10.0
+autoplay = true
+
+[node name="FirstTierSlotachine" parent="." unique_id=2043822558 instance=ExtResource("5_flokd")]
+position = Vector2(229, 384)
+
+[node name="SecondTierSlotmachine" parent="." unique_id=1017561956 instance=ExtResource("6_ji5vk")]
+position = Vector2(606, 368)
+
+[node name="ThirdTierSlotmachine" parent="." unique_id=572358733 instance=ExtResource("7_iwlc4")]
+position = Vector2(991, 425)

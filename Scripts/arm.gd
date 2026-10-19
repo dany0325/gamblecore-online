@@ -17,9 +17,6 @@ var streak_payout_ratios = {
 	7: 1000000.0 #300.0
 }
 
-func _on_spin_box_value_changed(value: float) -> void:
-	operation_cost = spin_box.value
-
 func _ready() -> void:
 	input_pickable = true  # on by default for Area2D, but explicit is nice
 	operation_cost = spin_box.value
@@ -28,8 +25,13 @@ func _input_event(viewport: Viewport, event: InputEvent, shape_idx: int) -> void
 	if event is InputEventMouseButton \
 			and event.button_index == MOUSE_BUTTON_LEFT \
 			and event.pressed:
+		spin_box.apply()                 # commits any typed text
+		operation_cost = spin_box.value  # always current
+		if player.money < operation_cost:
+			print("Not enough money to pull")
+			return
+		player.add_money(-operation_cost)
 		_pull_arm()
-		player.add_money(operation_cost * -1)
 
 func _pull_arm() -> void:
 	arm_pulled.emit()
@@ -58,13 +60,12 @@ func _check_result(items: Array) -> void:
 			
 	if streak == items.size():
 		print("JACKPOT: all %d match! %s" % [items.size(), first_item])
-		player.add_money(item_multipliers.get(first_item) * streak_payout_ratios.get(streak))
-		print(item_multipliers.get(first_item) * streak_payout_ratios.get(streak) * operation_cost)
+		player.add_money(item_multipliers.get(first_item) * streak_payout_ratios.get(streak) * operation_cost)
+		print(item_multipliers.get(first_item) * streak_payout_ratios.get(streak))
 		
 	elif streak >= 2:
 		print("%d matched: %s" % [streak, first_item])
-		player.add_money(item_multipliers.get(first_item) * streak_payout_ratios.get(streak))
-		print(item_multipliers.get(first_item) * streak_payout_ratios.get(streak) * operation_cost)
+		player.add_money(item_multipliers.get(first_item) * streak_payout_ratios.get(streak) * operation_cost)
 	else:
 		print("No match")
 		

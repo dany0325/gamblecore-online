@@ -3,11 +3,10 @@
 [ext_resource type="PackedScene" uid="uid://bvrxhvj2s4ya6" path="res://Scenes/first_tier_slotmachine.tscn" id="1_8od7v"]
 [ext_resource type="Script" uid="uid://c81kcsmhgtk1o" path="res://Scripts/player.gd" id="2_qc4db"]
 [ext_resource type="Texture2D" uid="uid://sqvtrowvmxhp" path="res://Assets/slot machine assets/scam.png" id="3_qc4db"]
+[ext_resource type="PackedScene" uid="uid://cn2nplratuhsk" path="res://Scenes/second_tier_slotmachine.tscn" id="4_ys1qc"]
+[ext_resource type="PackedScene" uid="uid://drt4uitqtw7k" path="res://Scenes/third_tier_slotmachine.tscn" id="5_35xla"]
 
 [node name="Test" type="Node2D" unique_id=843276641]
-
-[node name="Arm" parent="." unique_id=2043822558 instance=ExtResource("1_8od7v")]
-position = Vector2(6, -7)
 
 [node name="player" type="Node" parent="." unique_id=181631494 node_paths=PackedStringArray("money_label", "debt_kabel", "loan_gib", "aaaaaaaaaaaaaaaaa")]
 unique_name_in_owner = true
@@ -92,3 +91,12 @@ text = "Pay loan"
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=657615380]
 position = Vector2(58, -90)
+
+[node name="Arm" parent="." unique_id=2043822558 instance=ExtResource("1_8od7v")]
+position = Vector2(-304, -11)
+
+[node name="SecondTierSlotmachine" parent="." unique_id=1425599495 instance=ExtResource("4_ys1qc")]
+position = Vector2(44, -23)
+
+[node name="ThirdTierSlotmachine" parent="." unique_id=1484513606 instance=ExtResource("5_35xla")]
+position = Vector2(449, 17)

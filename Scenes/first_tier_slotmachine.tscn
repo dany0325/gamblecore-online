@@ -43,7 +43,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Arm" type="Area2D" unique_id=2043822558]
+[node name="FirstTierSlotmachine" type="Area2D" unique_id=2043822558]
 script = ExtResource("1_fad38")
 slots = Array[NodePath]([NodePath("Slot/Slot1"), NodePath("Slot/Slot2"), NodePath("Slot/Slot3")])
 
