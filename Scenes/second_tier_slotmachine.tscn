@@ -394,26 +394,26 @@ scale = Vector2(0.28365386, 0.28365386)
 texture = ExtResource("3_507b0")
 
 [node name="Slot1" type="AnimatedSprite2D" parent="Slots" unique_id=274849855]
-position = Vector2(66, -7.0000005)
+position = Vector2(66, -8)
 scale = Vector2(0.2, 0.2)
 sprite_frames = SubResource("SpriteFrames_83mgo")
 animation = &"coin"
 script = ExtResource("3_df1we")
 
 [node name="Slot2" type="AnimatedSprite2D" parent="Slots" unique_id=281539338]
-position = Vector2(-15.5, -9)
+position = Vector2(-15.5, -8)
 sprite_frames = SubResource("SpriteFrames_fcujq")
 animation = &"six"
 script = ExtResource("3_df1we")
 
 [node name="Slot3" type="AnimatedSprite2D" parent="Slots" unique_id=645148339]
-position = Vector2(-53.5, -8.999985)
+position = Vector2(-53.5, -8)
 scale = Vector2(0.05, 0.05)
 sprite_frames = SubResource("SpriteFrames_tu0h3")
 script = ExtResource("3_df1we")
 
 [node name="Slot4" type="AnimatedSprite2D" parent="Slots" unique_id=972060815]
-position = Vector2(25.499989, -5.0000153)
+position = Vector2(25.5, -8)
 scale = Vector2(0.07, 0.07)
 sprite_frames = SubResource("SpriteFrames_g4v7s")
 animation = &"diamond"

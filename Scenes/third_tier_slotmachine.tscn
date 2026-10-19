@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bimuomeys37e3" path="res://Assets/literal slot machine assets/captain clark gambling empire slot machine empty slots.png" id="2_jn1hj"]
 [ext_resource type="Texture2D" uid="uid://50cul8uuey3j" path="res://Assets/slot machine assets/cherry.png" id="3_eb0xy"]
 [ext_resource type="Script" uid="uid://cilcr6i0vjw2b" path="res://Scripts/slot.gd" id="3_m0y4f"]
+[ext_resource type="Texture2D" uid="uid://4w7hw10kk8b4" path="res://Assets/slot machine assets/single slot background.png" id="3_x1d05"]
 [ext_resource type="Texture2D" uid="uid://dm3dbihbu0s0k" path="res://Assets/slot machine assets/6 art asset.png" id="4_v6u47"]
 [ext_resource type="Texture2D" uid="uid://sqvtrowvmxhp" path="res://Assets/slot machine assets/scam.png" id="5_x1d05"]
 [ext_resource type="Texture2D" uid="uid://ixrpiqatar68" path="res://Assets/slot machine assets/7 art asset.png" id="6_dpuf6"]
@@ -247,6 +248,41 @@ text = "bet range: work in progress"
 
 [node name="Slots" type="Node2D" parent="." unique_id=2132682078]
 
+[node name="SingleSlotBackground5" type="Sprite2D" parent="Slots" unique_id=1879733636]
+position = Vector2(-141, -58)
+scale = Vector2(0.28365386, 0.28365386)
+texture = ExtResource("3_x1d05")
+
+[node name="SingleSlotBackground6" type="Sprite2D" parent="Slots" unique_id=1643471989]
+position = Vector2(-96, -59)
+scale = Vector2(0.28365386, 0.28365386)
+texture = ExtResource("3_x1d05")
+
+[node name="SingleSlotBackground7" type="Sprite2D" parent="Slots" unique_id=1565418131]
+position = Vector2(-53.000008, -59)
+scale = Vector2(0.28365386, 0.28365386)
+texture = ExtResource("3_x1d05")
+
+[node name="SingleSlotBackground8" type="Sprite2D" parent="Slots" unique_id=2121087978]
+position = Vector2(-11, -60)
+scale = Vector2(0.28365386, 0.28365386)
+texture = ExtResource("3_x1d05")
+
+[node name="SingleSlotBackground9" type="Sprite2D" parent="Slots" unique_id=1151604829]
+position = Vector2(29.999977, -60)
+scale = Vector2(0.28365386, 0.28365386)
+texture = ExtResource("3_x1d05")
+
+[node name="SingleSlotBackground10" type="Sprite2D" parent="Slots" unique_id=1373455261]
+position = Vector2(74.99996, -60)
+scale = Vector2(0.28365386, 0.28365386)
+texture = ExtResource("3_x1d05")
+
+[node name="SingleSlotBackground11" type="Sprite2D" parent="Slots" unique_id=508067686]
+position = Vector2(115.99996, -60)
+scale = Vector2(0.28365386, 0.28365386)
+texture = ExtResource("3_x1d05")
+
 [node name="Slot1" type="AnimatedSprite2D" parent="Slots" unique_id=1954863213]
 position = Vector2(-141, -47)
 sprite_frames = SubResource("SpriteFrames_x1d05")
@@ -266,7 +302,7 @@ animation = &"six"
 script = ExtResource("3_m0y4f")
 
 [node name="Slot4" type="AnimatedSprite2D" parent="Slots" unique_id=972060815]
-position = Vector2(-6.9999995, -47.000023)
+position = Vector2(-10, -47)
 scale = Vector2(0.036175266, 0.036175266)
 sprite_frames = SubResource("SpriteFrames_lonno")
 animation = &"clover"
